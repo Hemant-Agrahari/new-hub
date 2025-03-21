@@ -1,0 +1,145 @@
+.promotionFirstModal .MuiDialog-paper {
+    max-width: 465px !important;
+    background: var(--gray-700, #5c2242);
+    border-radius: 10px;
+    padding: 0 18px 30px;
+    margin: 110px 10px 10px;
+    overflow: initial;
+  }
+  
+  .promotionFirstModal-content .promoCloseIcon {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: var(--white);
+    cursor: pointer;
+    z-index: 1;
+  }
+  
+  .promotionFirstModal-content .promoCloseIcon svg {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .promotionFirstModal-content .promotionGift {
+    position: relative;
+    top: 50%;
+    left: 0;
+    transform: translateY(-45%);
+    text-align: center;
+  }
+  
+  .promotionFirstModal-content .promotionGift img {
+    max-width: 100px;
+  }
+  
+  .promotionGift-logo img {
+    max-width: 40px;
+  }
+  
+  .promoGift-ul {
+    padding: 0;
+    list-style: none;
+    padding: 15px;
+  }
+  
+  .promotionGift-logo {
+    background: var(--gray-600, --burgundy-red);
+    text-align: center;
+    margin-inline: -18px;
+    margin-top: -30px;
+  }
+  
+  .promotionGift-bonus {
+    margin-bottom: clamp(15px, 2vw, 32px);
+  }
+  
+  .promotionGift-bonus img {
+    height: auto;
+  }
+  
+  .promotionSecondModals .MuiDialog-paper {
+    padding-bottom: 0 !important;
+  }
+  
+  .promotionSecondModals .MuiDialog-paper {
+    max-width: 605px !important;
+  }
+  
+  .promotionGift-footer {
+    background: var(--gray-600,--burgundy-red);
+    margin-inline: -18px;
+    padding-block: 12px;
+    text-align: center;
+  }
+  
+  .promotionGift-footer p {
+    font-size: clamp(12px, 1vw, 16px);
+    color: var(--white);
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  .promotionGift-footer a {
+    color: var(--yellow-vivid);
+    font-size: clamp(12px, 1vw, 16px);
+    font-weight: 700;
+    text-decoration: none;
+    display: inline-block;
+    padding: 9px 20px;
+    background: var(--gray-600,--burgundy-dark);
+    border-radius: 8px;
+  }
+  
+  .promotionGift-logo img {
+    max-width: 160px;
+  }
+  
+  .promoGift-ul .promoGift-title {
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--white);
+  }
+  
+  .promoGift-ul li {
+    font-weight: 400;
+    font-size: clamp(12px, 1.8vw, 20px);
+    color: var(--white);
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+
+
+  .promotionSecondModal .MuiDialog-paper {
+    background: var(--gray-700, #5c2242);
+    border-radius: 10px;
+    margin: 10px;
+  }
+  
+  .promotioSecondnModal-content .promoCloseIcon {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    color: var(--white);
+    cursor: pointer;
+  }
+  
+  .promotioSecondnModal-content .promoCloseIcon svg {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .promotioSecondnModal-content .promoTitle {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 44px;
+    text-align: center;
+    color: var(--white);
+    padding: 6px;
+    background: var(--gray-600) !important;
+  }
+  
+  .promotioSecondnModal-content .slick-list {
+    margin: 0 -10px;
+  }
+  

@@ -1,0 +1,12 @@
+.forgot-password-input-field {
+    background: var(--gray-500);
+    border-radius: 2px;
+  } 
+  
+  .forgot-password-input-field .MuiOutlinedInput-input {
+    color: var(--white);
+  }
+  
+  .forgot-password-input-field .MuiInputAdornment-root {
+    position: start;
+  }

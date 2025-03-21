@@ -1,0 +1,51 @@
+.walletHistoryPage-tab .MuiTabs-root {
+    min-height: initial;
+    width: 720px;
+    max-width: 100%;
+    margin: 30px auto 30px;
+    justify-content: center;
+    background: var(--gray-600, --burgundy-dark);
+    border-radius: 10px;
+  }
+  
+  .walletHistoryPage-tab .MuiTabs-root .MuiButtonBase-root {
+    background-repeat: no-repeat;
+    background-size: 20px;
+    flex: 1;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #b5b5b5;
+    padding: 20px 10px;
+    min-height: initial;
+    text-transform: capitalize;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .walletHistoryPage-tab .MuiTabs-root .MuiButtonBase-root.Mui-selected {
+    color: var(--white);
+  }
+  
+  .walletHistoryPage-tab .MuiTabs-root .MuiTabs-indicator {
+    height: 100%;
+    width: 100%;
+    background-color: var(--gray-500, --deep-pink);
+    border-radius: 10px;
+  }
+  
+  .walletHistoryPage-tab .MuiTabPanel-root {
+    padding: 0;
+  }
+
+  .walletHistoryPage-tab .MuiTabs-root {
+    border: 1px solid var(--gray-300);
+    background: var(--gray-600);
+    padding: 3px;
+  }
+
+  .walletHistoryPage-tab .MuiTabs-root .MuiTabs-indicator {
+    background: linear-gradient(90deg, var(--blue-vivid) 0%, #7e43de 98.45%);
+    border: 1px solid #6458e3 !important;
+    border-radius: 8px;
+  }
