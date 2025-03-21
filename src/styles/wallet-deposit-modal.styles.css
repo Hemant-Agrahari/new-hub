@@ -53,7 +53,7 @@
 }
 
 .wallet_sec_other .hot {
-  background: #da384e;
+  background: var(--raspberry-red-1);
   border-radius: 0px 14px;
   font-weight: 700;
   font-size: 8px;
@@ -114,12 +114,12 @@
 }
 
 .modal-btn-CPF:hover {
-  background-color: #63a1ff;
+  background-color: var(--sky-blue-3);
 }
 
 .wallet-outlined-input {
   border-radius: 10px;
-  margin-top: 16px; /* Equivalent to marginTop: 2 (assuming base unit is 8px) */
+  margin-top: 16px;
 }
 
 .wallet-outlined-input .MuiOutlinedInput-input {

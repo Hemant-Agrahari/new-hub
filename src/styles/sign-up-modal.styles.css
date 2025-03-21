@@ -47,7 +47,7 @@
 
 .signin-checkbox-icon {
   font-size: 25px;
-  color: #ffffff96 !important;
+  color: var( --semi-transparent-white) !important;
   background: var(--gray-400, --burgundy-red);
 }
 
@@ -57,7 +57,7 @@
 
 .promotion-checkbox-icon .MuiSvgIcon-root {
   font-size: 25px;
-  color: #ffffff96;
+  color: var( --semi-transparent-white);
   background: var(--gray-400, --burgundy-red);
 }
 

@@ -3,6 +3,7 @@
   --dark: #232323;
   --red: #ff0000;
   --white: #fff;
+  --semi-transparent-white: #FFFFFF96;
   --black: #000000;
   --green: #6dfe8f;
   --gray: #000;
@@ -28,6 +29,7 @@
   --vivid-sky-blue: #3a7bf0;
   --sky-blue: #6587FF;
   --blue-violet-transparent: #7e43def5;
+  --raspberry-red: #DD244A;
   --blue: #6458e3;
   --soft-blue:#5F66FD;
   --midnight-blue: #161c4f;
@@ -69,8 +71,12 @@
   --slate-gray: #4D4D4D;
   --bright-blue: #667BFF;
   --bright-blue: #2B54E6;
+  --sky-blue-3: #63A1FF;
   --lilac: #C99EFF;
   --butter-yellow: #FDF4B4;
+  --lavender-blue-3: #8A96CA;
+  --raspberry-red-1: #DA384E;
+  --crimson-red-1: #550B33;
   --font-weight:600
 }
 
@@ -732,7 +738,7 @@ footer.sideBarOpen {
 }
 
 .footerRight a.download {
-  background-color: #dd244a;
+  background-color:var(--raspberry-red);
 }
 
 .footerRight a.chat {

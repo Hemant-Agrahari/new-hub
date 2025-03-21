@@ -1,6 +1,5 @@
 .vip-slider .slick-slide {
   padding: 0 2px;
-  /* padding: 0; */
 }
 
 .advantage {
@@ -18,7 +17,7 @@
   left: 0;
   top: 0;
   background-color: var(--gray-600,--burgundy-red);
-  background: linear-gradient(90deg, var(--blue-vivid) 0%, #7e43de 98.45%);
+  background: linear-gradient(90deg, var(--blue-vivid) 0%, var(--blue-violet) 98.45%);
   padding-bottom: 50%;
   width: 58%;
   z-index: 1;
@@ -50,7 +49,7 @@
   left: 50%;
   transform: translate(-50%, 10px);
   z-index: 1;
-  color: #1e5d80;
+  color: var(--steel-blue);
   font-weight: 900;
   font-size: 20px;
   line-height: normal;

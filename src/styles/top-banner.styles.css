@@ -33,7 +33,7 @@
 }
 
 .homeBannerDesktop .homeBanner-content .title span {
-  color: #dd244a;
+  color:var(--raspberry-red);
 }
 
 .homeBannerDesktop .homeBanner-content .price {

@@ -1,6 +1,6 @@
 .StatisticsTab {
   padding: 25px 50px 45px;
-  background: var(--gray-800, #550b33);
+  background: var(--gray-800,--crimson-red-1);
   border-radius: 10px;
 }
 
@@ -20,7 +20,7 @@
 .bonus-date .MuiFormControl-root .MuiOutlinedInput-notchedOutline {
   border-color: transparent !important;
   border-radius: 10px;
-  color: #8a96ca;
+  color: var(--lavender-blue-3);
 }
 
 .bonus-date
