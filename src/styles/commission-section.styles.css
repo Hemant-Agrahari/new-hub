@@ -154,7 +154,7 @@
   line-height: 46px;
   display: flex;
   align-items: center;
-  color: #ffd569;
+  color: var(--golden-yellow);
 }
 
 .getCommission-col .getCommission-colBotm .income-calculator .invite-user {
@@ -271,7 +271,7 @@
     font-size: 14px;
     line-height: 17px;
     margin-bottom: 25px;
-    color: white;
+    color: var(--white);
   }
 
   .getCommission-col

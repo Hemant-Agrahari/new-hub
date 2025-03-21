@@ -46,6 +46,6 @@
 
   .walletHistoryPage-tab .MuiTabs-root .MuiTabs-indicator {
     background: linear-gradient(90deg, var(--blue-vivid) 0%, var(--blue-violet) 98.45%);
-    border: 1px solid #6458e3 !important;
+    border: 1px solid var(--blue) !important;
     border-radius: 8px;
   }

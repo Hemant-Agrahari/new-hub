@@ -13,7 +13,7 @@
   color: white;
   font-weight: 800;
   background: linear-gradient(90deg, var(--blue-vivid) 0%, var(--blue-violet) 98.45%);
-  border: 2px solid #6458e3 !important;
+  border: 2px solid var(--blue) !important;
 }
 
 .pagination-text ul li button {

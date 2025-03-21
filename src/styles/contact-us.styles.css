@@ -23,15 +23,15 @@
   border-radius: 8px;
 }
 .contact-form .form-container {
-  background: #383838;
+  background: var(--charcoal-gray);
   padding-inline: clamp(20px, 4vw, 60px);
   padding-block: clamp(20px, 4vw, 40px);
   border-radius: 8px;
 }
 .contact-form .form-control,
 .contact-form .form-select {
-  background-color: #171717 !important;
-  border-color: #171717 !important;
+  background-color: var(--charcoal-black) !important;
+  border-color: var(--charcoal-black) !important;
 }
 .contact-form .form-control,
 .contact-form .form-select {
@@ -50,11 +50,11 @@
 }
 .contact-form .form-control:focus,
 .contact-form .form-select:focus {
-  border-color: #dee2e6;
+  border-color: var(--light-gray-2);
 }
 .contact-form .form-control::placeholder,
 .contact-form .form-select::placeholder {
-  color: #fff;
+  color: var(--white);
   opacity: 1;
 }
 

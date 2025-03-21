@@ -33,7 +33,7 @@
 
 .btn-gradient {
   background: linear-gradient(90deg, var(--blue-vivid) 0%, var(--blue-violet) 98.45%);
-  border: 1px solid #6458e3 !important;
+  border: 1px solid var(--blue) !important;
 }
 
 .btn_light {
@@ -49,14 +49,14 @@ main .loginSignUp-btn .signUp-btn {
   margin-left: 0px;
   background: var(--gray-400);
   background: linear-gradient(90deg, var(--blue-vivid) 0%, var(--blue-violet) 98.45%);
-  border: 1px solid #6458e3 !important;
+  border: 1px solid var(--blue) !important;
   padding: clamp(6px, 1vw, 12px) clamp(16px, 2vw, 30px);
 }
 
 .loginSignUp-btn .backtopbtn {
   background: var(--gray-400);
   background: linear-gradient(90deg, var(--blue-vivid) 0%, var(--blue-violet) 98.45%);
-  border: 1px solid #6458e3 !important;
+  border: 1px solid var(--blue) !important;
   padding: clamp(6px, 1vw, 12px) clamp(16px, 1vw, 30px) !important;
 }
 
@@ -110,7 +110,7 @@ main .loginSignUp-btn .signUp-btn {
   width: 100%;
   padding: clamp(14px, 1vw, 16px);
   background: linear-gradient(90deg, var(--blue-vivid) 0%, var(--blue-violet) 98.45%);
-  border: 1px solid #6458e3 !important;
+  border: 1px solid var(--blue) !important;
   border-radius: 6px;
   color: var(--white);
   font-weight: 700;
@@ -565,7 +565,7 @@ main .loginSignUp-btn .signUp-btn {
 
 .hpMenu-botm .profile-logout {
   background: linear-gradient(90deg, var(--blue-vivid) 0%, var(--blue-violet) 98.45%);
-  border: 1px solid #6458e3 !important;
+  border: 1px solid var(--blue) !important;
   border-radius: 8px;
   padding: 10px 30px;
   border-radius: 4px;

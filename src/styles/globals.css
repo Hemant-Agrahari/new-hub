@@ -28,6 +28,7 @@
   --blue-violet-transparent: #7e43def5;
   --blue: #6458e3;
   --soft-blue:#5F66FD;
+  --midnight-blue: #161c4f;
   --blue-deep: #1d1b31;
   --blue-violet: #7e43de;
   --blue-vivid: #4473e9;
@@ -39,6 +40,7 @@
   --blue-dark-slate: #32395f;
   --blue-gray-mute: #7f8aba;
   --purple-plum: #4c184e;
+  --burgundy: var(--burgundy);
   --burgundy-red: #420c29;
   --burgundy-dark: #31001b;
   --purple-pink: #86188f;
@@ -49,9 +51,17 @@
   --medium-violet:#9643FF;
   --yellow-vivid: #ffc635;
   --golden-yellow: #FFC961;
+  --sunshine-yellow:#ffcf53;
   --crimson:#580935;
   --crimson-1: #5C2242;
-  --purple-heart:#871990
+  --purple-heart:#871990;
+  --light-gray-transparent: #D9D9D91A;
+  --dark-gray-transparent: #424242C4;
+  --magenta-transparent: #A2246B00;
+  --light-gray-1: #B7B5B6;
+  --light-gray-2: #DEE2E6;
+  --charcoal-gray: #383838;
+  --charcoal-black: #171717;
   --font-weight:600
 }
 
@@ -288,7 +298,7 @@ button {
   z-index: 1;
   flex: 1;
   background: linear-gradient(90deg, #4473e9 0%, var(--blue-violet) 98.45%);
-  border: 1px solid #6458e3 !important;
+  border: 1px solid var(--blue) !important;
 }
 
 .Tab_sidebar .MuiTabs-indicator {
@@ -1131,7 +1141,7 @@ span._35l6Q svg {
 .bonus-date .search-btn,
 .userButtonCopy {
   background: linear-gradient(90deg, #4473e9 0%, var(--blue-violet) 98.45%);
-  border: 1px solid #6458e3 !important;
+  border: 1px solid var(--blue) !important;
   border-radius: 8px;
 }
 
