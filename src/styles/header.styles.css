@@ -202,7 +202,7 @@ main .loginSignUp-btn .signUp-btn {
 .headerProfile .headerProfile-btn .profile-img {
   width: 33px;
   height: 33px;
-  background-color: #667bff;
+  background-color: var(--bright-blue);
   border-radius: 100%;
 }
 
@@ -302,7 +302,7 @@ main .loginSignUp-btn .signUp-btn {
 .hpMenu-top .user-info .user-img {
   width: 33px;
   height: 33px;
-  background-color: #667bff;
+  background-color:var(--bright-blue);
   border-radius: 100%;
 }
 
@@ -330,7 +330,7 @@ main .loginSignUp-btn .signUp-btn {
 }
 
 .hpMenu-top .user-info .userCopy-btn:hover {
-  background-color: #6587ff;
+  background-color: var(--sky-blue);
 }
 
 .hpMenu-top .user-levelScore {
@@ -363,7 +363,7 @@ main .loginSignUp-btn .signUp-btn {
 }
 
 .purple-shade{
-  color:#9643FF;
+  color:var(--medium-violet);
 }
 .yellow-shade{
   color:var(--yellow-vivid);
@@ -406,7 +406,7 @@ main .loginSignUp-btn .signUp-btn {
   .title-value
   .amount
   span {
-  color: #ffed4a;
+  color:var(--lemon-yellow);
 }
 
 .hpMenu-top
@@ -416,7 +416,7 @@ main .loginSignUp-btn .signUp-btn {
   .title-value
   .amount
   span {
-  color: #2b54e6;
+  color: var(--bright-blue);
 }
 
 .hpMenu-top .user-levelScore .userScore .userScore-col .process-score {
@@ -488,7 +488,7 @@ main .loginSignUp-btn .signUp-btn {
   .bet-score
   .MuiLinearProgress-root
   .MuiLinearProgress-bar {
-  background-color: #9643ff;
+  background-color:var(--medium-violet);
 }
 
 .hpMenu-top

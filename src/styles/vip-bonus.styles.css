@@ -108,7 +108,7 @@
   .title-value
   .amount
   span {
-  color: #ffed4a;
+  color: var(--lemon-yellow);
 }
 
 .hpMenu-top-vip
@@ -152,7 +152,7 @@
   width: 100%;
   height: 10px;
   border-radius: 20px;
-  background-color: #000;
+  background-color: var(--black);
 }
 
 .hpMenu-top-vip
@@ -162,7 +162,7 @@
   .process-score
   .MuiLinearProgress-root
   .MuiLinearProgress-bar {
-  background-color: #9643ff;
+  background-color: var(--medium-violet);
 }
 
 .hpMenu-top-vip
@@ -190,7 +190,7 @@
 }
 
 .upgrading-btn:hover {
-  background: #d9d9d91a;
+  background: var(--light-gray-transparent);
   transition: 0.5s;
 }
 
@@ -264,11 +264,11 @@
   .title-value
   .amount
   span {
-  color: #ffed4a;
+  color:var(--lemon-yellow);
 }
 
 .hpMenu-top-Fullvip .user-info .userCopy-btn:hover {
-  background-color: #6587ff;
+  background-color:var(--sky-blue);
 }
 
 .hpMenu-top-Fullvip
@@ -278,7 +278,7 @@
   .title-value
   .amount
   span {
-  color: #2b54e6;
+  color: var(--bright-blue);
 }
 
 .hpMenu-top-Fullvip .user-levelScore .userScore .userScore-col .process-score {
@@ -296,7 +296,7 @@
   width: 100%;
   height: 10px;
   border-radius: 20px;
-  background-color: #314f8e;
+  background-color: var(--royal-blue-2);
 }
 
 .hpMenu-top-Fullvip
@@ -306,7 +306,7 @@
   .process-score
   .MuiLinearProgress-root
   .MuiLinearProgress-bar {
-  background-color: #6587ff;
+  background-color: var(--sky-blue);
 }
 
 .hpMenu-top-Fullvip

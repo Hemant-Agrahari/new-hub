@@ -24,7 +24,9 @@
   --blue-royal-transparent: #4473e9e0;
   --royal-blue: #224a93;
   --royal-blue-1: #3360FF;
+  --royal-blue-2: #314F8E;
   --vivid-sky-blue: #3a7bf0;
+  --sky-blue: #6587FF;
   --blue-violet-transparent: #7e43def5;
   --blue: #6458e3;
   --soft-blue:#5F66FD;
@@ -47,6 +49,7 @@
   --deep-plum: #4a184b;
   --deep-pink: #a2246b;
   --golden-yellow: #ffd569;
+  --lemon-yellow: #FFED4A;
   --pink-coral: #dd566e;
   --medium-violet:#9643FF;
   --yellow-vivid: #ffc635;
@@ -62,6 +65,10 @@
   --light-gray-2: #DEE2E6;
   --charcoal-gray: #383838;
   --charcoal-black: #171717;
+  --pale-blue: #ABBDD9;
+  --slate-gray: #4D4D4D;
+  --bright-blue: #667BFF;
+  --bright-blue: #2B54E6;
   --font-weight:600
 }
 

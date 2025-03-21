@@ -60,5 +60,5 @@
 
 .contact-form .form-control::-ms-input-placeholder,
 .contact-form .form-select::-ms-input-placeholder {
-  color: #fff;
+  color: var(--white);
 }
