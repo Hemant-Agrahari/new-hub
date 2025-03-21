@@ -32,10 +32,10 @@ button {
     text-decoration: none !important;
 }
 .gradiant-bg{
-    background: linear-gradient(90deg, #7E43DE 0%, var(--blue-vivid) 98.45%);
+    background: linear-gradient(90deg, var(--blue-violet) 0%, var(--blue-vivid) 98.45%);
 }
 .text-gradiant {
-    background: linear-gradient(90deg, #7E43DE 0%, var(--blue-vivid) 98.45%);
+    background: linear-gradient(90deg, var(--blue-violet) 0%, var(--blue-vivid) 98.45%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; /* For webkit browsers */
     background-clip: text; /* Non-webkit browsers */
@@ -43,7 +43,7 @@ button {
 }
 .border-gradiant {
     border: 5px solid transparent;
-    background-image: linear-gradient(90deg, #7E43DE 0%, var(--blue-vivid) 98.45%);
+    background-image: linear-gradient(90deg, var(--blue-violet) 0%, var(--blue-vivid) 98.45%);
     background-clip: padding-box;
     border-radius: 5px;
     position: relative;
@@ -57,7 +57,7 @@ button {
     right: -1px;
     bottom: -1px;
     border-radius: inherit;
-    background: linear-gradient(90deg, #7E43DE 0%, var(--blue-vivid) 98.45%);
+    background: linear-gradient(90deg, var(--blue-violet) 0%, var(--blue-vivid) 98.45%);
     z-index: -1;
     filter: blur(0px);
 }
@@ -120,7 +120,7 @@ button {
     transform: translateY(-10px);
 }
 .contact-icon {
-    background: linear-gradient(90deg, #7E43DE 0%, #4473E9 98.45%);
+    background: linear-gradient(90deg, var(--blue-violet) 0%, #4473E9 98.45%);
     padding: 9px;
     border-radius: 8px;
     display: inline-block;
@@ -286,7 +286,7 @@ img.blog-detail-image.my-3 {
     left: 0;
     bottom: 0;
     width: 5px; /* Border width */
-    background: linear-gradient(90deg, #7E43DE 0%, #4473E9 98.45%);
+    background: linear-gradient(90deg,  0%, #4473E9 98.45%);
     z-index: -1; /* Make sure it’s behind the text */
     border-radius: 12px;
 }

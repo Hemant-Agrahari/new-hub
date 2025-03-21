@@ -4,8 +4,8 @@
   margin-bottom: 40px;
   border-radius: 10px;
   overflow: hidden;
-  background: linear-gradient(110.11deg, #161c4f 13.46%, #3360ff 88.34%);
-  background: linear-gradient(90deg, var(--blue-vivid) 0%, #7e43de 98.45%);
+  background: linear-gradient(110.11deg, #161c4f 13.46%, var(--royal-blue-1) 88.34%);
+  background: linear-gradient(90deg, var(--blue-vivid) 0%, var(--blue-violet) 98.45%);
   border: 1px solid #6458e3 !important;
 }
 

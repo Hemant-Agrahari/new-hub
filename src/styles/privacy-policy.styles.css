@@ -86,7 +86,7 @@
 
 .tabs-box .Mui-selected {
   color: var(--white) !important;
-  background: linear-gradient(90deg var(--blue-vivid) 0%, #7e43de 98.45%) !important;
+  background: linear-gradient(90deg var(--blue-vivid) 0%, var(--blue-violet) 98.45%) !important;
   border: 0px solid #6458e3 !important;
 }
 

@@ -1,9 +1,4 @@
 .userimgName {
-  background: linear-gradient(
-    158.06deg,
-    var(--gray-800, #4c184e) 0.09%,
-    var(--gray-800, #871990) 85.68%
-  );
   border-radius: 10px;
   padding: 12px;
   display: flex;
@@ -24,12 +19,12 @@
   background: linear-gradient(
     158.06deg,
     var(--gray-800, --purple-plum) 0.09%,
-    var(--gray-800, #871990) 85.68%
+    var(--gray-800, --purple-heart) 85.68%
   );
   border: linear-gradient(
     158.06deg,
     var(--gray-800, --purple-plum) 0.09%,
-    var(--gray-800, #871990) 85.68%
+    var(--gray-800, --purple-heart) 85.68%
   );
   color: var(--white);
   font-weight: 700;
@@ -41,13 +36,13 @@
   padding: 12px 36px;
   background: linear-gradient(
     158.06deg,
-    var(--gray-800, #4c184e) 0.09%,
-    var(--gray-800, #871990) 85.68%
+    var(--gray-800, --purple-plum) 0.09%,
+    var(--gray-800, --purple-heart) 85.68%
   );
   border: linear-gradient(
     158.06deg,
-    var(--gray-800, #4c184e) 0.09%,
-    var(--gray-800, #871990) 85.68%
+    var(--gray-800, --purple-plum) 0.09%,
+    var(--gray-800, --purple-heart) 85.68%
   );
   color: var(--white);
   font-weight: 700;
@@ -57,8 +52,8 @@
 .userDisplayPC {
     background: linear-gradient(
       158.06deg,
-      var(--gray-800, #4c184e) 0.09%,
-      var(--gray-800, #871990) 85.68%
+      var(--gray-800, --purple-plum) 0.09%,
+      var(--gray-800, --purple-heart) 85.68%
     );
     border-radius: 10px;
     padding: 12px;

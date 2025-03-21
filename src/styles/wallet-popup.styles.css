@@ -1,6 +1,6 @@
 .depoWithdro-tabContainer {
   padding: 20px;
-  background-color: var(--gray-700, #5c2242);
+  background-color: var(--gray-700,--crimson-1);
 }
 
 .depoWithdro-tabContainer .MuiOutlinedInput-root {

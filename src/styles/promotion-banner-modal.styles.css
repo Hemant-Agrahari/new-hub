@@ -1,6 +1,6 @@
 .promotionFirstModal .MuiDialog-paper {
     max-width: 465px !important;
-    background: var(--gray-700, #5c2242);
+    background: var(--gray-700,--crimson-1);
     border-radius: 10px;
     padding: 0 18px 30px;
     margin: 110px 10px 10px;
@@ -111,7 +111,7 @@
 
 
   .promotionSecondModal .MuiDialog-paper {
-    background: var(--gray-700, #5c2242);
+    background: var(--gray-700,--crimson-1);
     border-radius: 10px;
     margin: 10px;
   }

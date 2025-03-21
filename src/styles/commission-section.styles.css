@@ -195,7 +195,7 @@
   .calculat-slider
   .MuiSlider-root
   .MuiSlider-rail {
-  background-color: var(--gray-300, #5c2242);
+  background-color: var(--gray-300,--crimson-1);
   opacity: 1;
 }
 

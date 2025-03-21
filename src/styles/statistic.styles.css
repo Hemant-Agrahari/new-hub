@@ -35,7 +35,7 @@
   font-weight: 700;
   font-size: 15px;
   line-height: 20px;
-  background: #5c2242;
+  background:var(--crimson-1);
 }
 
 .bonus-date .MuiFormControl-root .MuiSvgIcon-root {
@@ -75,7 +75,7 @@
   input {
   width: 100%;
   border: transparent;
-  background-color: var(--gray-400, #5c2242);
+  background-color: var(--gray-400,--crimson-1);
   border-radius: 10px;
   padding: 18px 15px 18px 45px;
   font-weight: 600;

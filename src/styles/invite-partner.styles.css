@@ -124,7 +124,7 @@
   .formgroup
   .MuiInputBase-root
   .MuiButtonBase-root {
-  background: var(--gray-500, #5c2242);
+  background: var(--gray-500,--crimson-1);
   border-radius: 0px 10px 10px 0px;
   width: 37px;
   padding: 6px 10px;
@@ -158,7 +158,7 @@
 }
 
 .partner-revenue .revenue-row {
-  background: var(--gray-800, #5c2242);
+  background: var(--gray-800,--crimson-1);
   border-radius: 10px 10px 0px 0px;
   display: flex;
   align-items: center;

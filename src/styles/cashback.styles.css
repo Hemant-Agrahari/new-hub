@@ -105,7 +105,7 @@
 }
 
 .cashback_buttonBonus2{
-  background: linear-gradient(90deg, var(--blue-vivid) 0%, #7e43de 98.45%);
+  background: linear-gradient(90deg, var(--blue-vivid) 0%, var(--blue-violet) 98.45%);
   border: 1px solid #6458e3 !important;
   border-radius: 8px;
 }

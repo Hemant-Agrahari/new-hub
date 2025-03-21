@@ -1,7 +1,7 @@
 .affiliateModal .MuiDialog-paper {
   width: 95%;
   max-width: 465px !important;
-  background: var(--gray-500, #5c2242);
+  background: var(--gray-500,--crimson-1);
   border-radius: 10px;
   margin: 10px 5px 10px;
   overflow: initial;

@@ -94,11 +94,11 @@
 }
 
 .sidebar .nav-links > li:hover {
-  background: linear-gradient(90deg, var(--blue-vivid) 0%, #7e43de 98.45%);
+  background: linear-gradient(90deg, var(--blue-vivid) 0%, var(--blue-violet) 98.45%);
 }
 
 .sidebar .icon-link.enable {
-  background: linear-gradient(90deg, var(--blue-vivid) 0%, #7e43de 98.45%);
+  background: linear-gradient(90deg, var(--blue-vivid) 0%, var(--blue-violet) 98.45%);
   border-radius: 10px 10px 0 0;
 }
 
@@ -197,7 +197,7 @@
 
 .sidebar .nav-links li .sub-menu li:hover,
 .sidebar .nav-links li .sub-menu li:active {
-  background: linear-gradient(90deg, var(--blue-vivid), #7e43de);
+  background: linear-gradient(90deg, var(--blue-vivid), var(--blue-violet));
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -497,7 +497,7 @@
 }
 
 .subGameActive {
-  background: linear-gradient(90deg, #4473e9 0%, #7e43de 98.45%);
+  background: linear-gradient(90deg, #4473e9 0%, var(--blue-violet) 98.45%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

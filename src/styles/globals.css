@@ -22,15 +22,20 @@
   --gray-800: #171717;
   --gray-charcoal: #212529;
   --blue-royal-transparent: #4473e9e0;
+  --royal-blue: #224a93;
+  --royal-blue-1: #3360FF;
+  --vivid-sky-blue: #3a7bf0;
   --blue-violet-transparent: #7e43def5;
   --blue: #6458e3;
   --soft-blue:#5F66FD;
   --blue-deep: #1d1b31;
   --blue-violet: #7e43de;
   --blue-vivid: #4473e9;
+  --steel-blue: #1e5d80;
   --blue-charcoal: #272c4b;
   --blue-royal: #3366db;
   --blue-sapphire: #2f459f;
+  --vivid-blue: #3586ff;
   --blue-dark-slate: #32395f;
   --blue-gray-mute: #7f8aba;
   --purple-plum: #4c184e;
@@ -43,7 +48,10 @@
   --pink-coral: #dd566e;
   --medium-violet:#9643FF;
   --yellow-vivid: #ffc635;
+  --golden-yellow: #FFC961;
   --crimson:#580935;
+  --crimson-1: #5C2242;
+  --purple-heart:#871990
   --font-weight:600
 }
 
@@ -279,7 +287,7 @@ button {
   border-radius: 8px;
   z-index: 1;
   flex: 1;
-  background: linear-gradient(90deg, #4473e9 0%, #7e43de 98.45%);
+  background: linear-gradient(90deg, #4473e9 0%, var(--blue-violet) 98.45%);
   border: 1px solid #6458e3 !important;
 }
 
@@ -391,7 +399,7 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(90deg, rgba(78, 149, 255, 0) 0%, #5c2242 100%);
+  background: linear-gradient(90deg, rgba(78, 149, 255, 0) 0%, var(--crimson-1) 100%);
   border-radius: 22px;
   margin-bottom: 35px;
   padding: 4px 15px;
@@ -445,7 +453,7 @@ button {
 }
 
 .sidebar-menu li.active {
-  background: linear-gradient(90deg, #7e43de 0%, #4473e9 98.45%);
+  background: linear-gradient(90deg, var(--blue-violet) 0%, #4473e9 98.45%);
 }
 
 .sidebar-menu li a,
@@ -907,7 +915,7 @@ main.sideBarOpen iframe {
 .react-datepicker__day--selected:hover,
 .react-datepicker__day--selected,
 .react-datepicker__day--in-range {
-  background-color: var(--gray-600, #5c2242) !important;
+  background-color: var(--gray-600, --crimson-1) !important;
 }
 
 .react-datepicker__current-month,
@@ -917,7 +925,6 @@ main.sideBarOpen iframe {
   color: var(--white) !important;
 }
 
-/* Deposit Center pagination Button --------------- */
 .paginationButton {
   background: #1f224a;
   color: var(--white);
@@ -1123,7 +1130,7 @@ span._35l6Q svg {
 .referalPage-tab .MuiTabs-root .MuiTabs-indicator,
 .bonus-date .search-btn,
 .userButtonCopy {
-  background: linear-gradient(90deg, #4473e9 0%, #7e43de 98.45%);
+  background: linear-gradient(90deg, #4473e9 0%, var(--blue-violet) 98.45%);
   border: 1px solid #6458e3 !important;
   border-radius: 8px;
 }
@@ -1491,7 +1498,7 @@ span._35l6Q svg {
 .poker.active,
 .promotions.active,
 .ranking.active {
-  background: linear-gradient(90deg, #4473e9 0%, #7e43de 98.45%);
+  background: linear-gradient(90deg, #4473e9 0%, var(--blue-violet) 98.45%);
   border-radius: 10px;
 }
 
