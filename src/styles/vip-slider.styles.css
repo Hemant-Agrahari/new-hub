@@ -102,7 +102,7 @@
   }
   
   .slider-subtexts {
-    color: #b5b5b5;
+    color: var(--gray-100);
     line-height: 2;
     font-size: 15px;
   }

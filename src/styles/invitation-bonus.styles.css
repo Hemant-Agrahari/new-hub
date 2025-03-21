@@ -74,7 +74,7 @@
 }
 
 .achievement-bonus .cumulative-deposit .cd-col {
-  background-color: #c99eff;
+  background-color: var( --lilac);
   border-radius: 5px;
   margin-bottom: 10px;
   display: flex;
@@ -102,8 +102,8 @@
 }
 
 .achievement-bonus .cumulative-deposit .colouredAchivement {
-  background-color: #fdf4b4;
-  color: #000;
+  background-color:var(--butter-yellow);
+  color: var(---black);
 }
 
 @media screen and (max-width: 1199.98px) {

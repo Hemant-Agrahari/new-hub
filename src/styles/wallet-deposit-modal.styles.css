@@ -83,7 +83,7 @@
 }
 
 .doNotText {
-  color: #b5b5b5;
+  color: var(--gray-100);
   font-weight: 600;
 }
 

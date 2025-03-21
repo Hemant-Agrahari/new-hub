@@ -100,7 +100,7 @@
 }
 
 .accordion-answer-text{
-  color: #b5b5b5 !important;
+  color: var(--gray-100) !important;
   padding-left: clamp(65px, 10px + 3.2vw, 70px) !important; 
   font-size: clamp(14px, 4px + 1vw, 20px) !important;
 }

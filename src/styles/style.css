@@ -20,7 +20,7 @@ button {
     font-size: clamp(20px, 2vw, 32px);
 }
 .text-dark-gray{
-    color: #B5B5B5 !important;
+    color: var(--gray-100) !important;
 }
 .radius-8{
     border-radius: 8px;
@@ -120,7 +120,7 @@ button {
     transform: translateY(-10px);
 }
 .contact-icon {
-    background: linear-gradient(90deg, var(--blue-violet) 0%, #4473E9 98.45%);
+    background: linear-gradient(90deg, var(--blue-violet) 0%, var(--blue-vivid) 98.45%);
     padding: 9px;
     border-radius: 8px;
     display: inline-block;
@@ -285,9 +285,9 @@ img.blog-detail-image.my-3 {
     top: 0;
     left: 0;
     bottom: 0;
-    width: 5px; /* Border width */
-    background: linear-gradient(90deg,  0%, #4473E9 98.45%);
-    z-index: -1; /* Make sure it’s behind the text */
+    width: 5px;
+    background: linear-gradient(90deg,  0%, var(--blue-vivid) 98.45%);
+    z-index: -1;
     border-radius: 12px;
 }
 .px-4.border-left {

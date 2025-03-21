@@ -16,7 +16,7 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 17px;
-  color: #b5b5b5;
+  color: var(--gray-100);
   padding: 20px 10px;
   min-height: initial;
   text-transform: capitalize;
@@ -184,7 +184,7 @@
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
-  color: #b5b5b5;
+  color: var(--gray-100);
   display: block;
 }
 
@@ -197,7 +197,7 @@
 }
 
 .toInviteTab.partner-revenue .partner .revenue-row .revenue-col .value {
-  color: #b5b5b5;
+  color: var(--gray-100);
 }
 
 .partner-revenue .revenue .revenue-targets {

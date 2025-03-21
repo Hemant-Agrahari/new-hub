@@ -15,7 +15,7 @@
     font-weight: 700;
     font-size: 14px;
     line-height: 17px;
-    color: #b5b5b5;
+    color: var(--gray-100);
     padding: 20px 10px;
     min-height: initial;
     text-transform: capitalize;

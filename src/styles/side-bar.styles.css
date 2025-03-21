@@ -497,7 +497,7 @@
 }
 
 .subGameActive {
-  background: linear-gradient(90deg, #4473e9 0%, var(--blue-violet) 98.45%);
+  background: linear-gradient(90deg, var(--blue-vivid) 0%, var(--blue-violet) 98.45%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
