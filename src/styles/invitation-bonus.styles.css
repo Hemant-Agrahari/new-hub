@@ -13,7 +13,7 @@
 .invitation-bonus .invitationBonus-col {
   background: linear-gradient(
     110.11deg,
-    var(--gray-2100,   --deep-plum) 13.46%,
+    var(--gray-2100, --deep-plum) 13.46%,
     var(--gray-2100, --purple-pink) 88.34%
   );
   border-radius: 10px;
@@ -25,7 +25,7 @@
 .invitation-bonus .invitationBonus-col {
   background: linear-gradient(
     110.11deg,
-    var(--gray-2100,  --deep-plum) 13.46%,
+    var(--gray-2100, --deep-plum) 13.46%,
     var(--gray-2100, --purple-pink) 88.34%
   );
   border-radius: 10px;
@@ -63,7 +63,11 @@
 }
 
 .achievement-bonus {
-  background: linear-gradient(1.04deg, #2a0855 0.99%, #5c24a2 54.74%);
+  background: linear-gradient(
+    1.04deg,
+    var(--midnight-blue) 0.99%,
+    var(--midnight-blue-1) 54.74%
+  );
   border-radius: 10px;
   padding: 30px 65px;
   margin-top: 32px;
@@ -74,7 +78,7 @@
 }
 
 .achievement-bonus .cumulative-deposit .cd-col {
-  background-color: var( --lilac);
+  background-color: var(--lilac);
   border-radius: 5px;
   margin-bottom: 10px;
   display: flex;
@@ -102,7 +106,7 @@
 }
 
 .achievement-bonus .cumulative-deposit .colouredAchivement {
-  background-color:var(--butter-yellow);
+  background-color: var(--butter-yellow);
   color: var(---black);
 }
 

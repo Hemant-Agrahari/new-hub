@@ -204,8 +204,8 @@
   margin: 20px 35px 35px;
   background: linear-gradient(
     109.85deg,
-    var(--gray-600, #581d3f) 13.26%,
-    var(--gray-800, #9c2165) 88.12%
+    var(--gray-600, --crimson-red-1) 13.26%,
+    var(--gray-800, --hot-pink) 88.12%
   );
   border-radius: 10px;
   padding: 12px 15px;

@@ -94,7 +94,7 @@
   font-weight: 600;
   font-size: 13px;
   line-height: 15px;
-  color: #9aa4cf;
+  color: var(--periwinkle);
 }
 
 .leaderboard-prize .leaderboardPrize-col .wonPrize-ul li:last-child {

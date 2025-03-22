@@ -38,7 +38,7 @@
 .privacyTems-page h3 {
   font-weight: 600;
   font-size: 20px;
-  color: #a7b0d6;
+  color:var(--periwinkle-1);
   margin-bottom: 5px;
 }
 
@@ -46,7 +46,7 @@
   font-weight: 400;
   font-size: clamp(15px, 2px + 1vw, 24px);
   line-height: 150%;
-  color: #a7b0d6;
+  color: var(--periwinkle-1);
   color: rgb(255 255 255 / 40%);
   font-family: unset;
 }
