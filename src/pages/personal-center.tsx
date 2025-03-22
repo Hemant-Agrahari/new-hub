@@ -15,6 +15,7 @@ import { GetStaticProps } from 'next'
 import { commonStaticProps } from '@/utils/translation'
 import dynamic from 'next/dynamic'
 import { useTranslation } from 'react-i18next'
+import { copyToClipboard } from '@/utils/commonMethod'
 
 // Method is for language switch
 export const getStaticProps: GetStaticProps = async (context) => {
@@ -40,10 +41,6 @@ const PersonalCenterPage = () => {
       router.replace('/')
     }
   }, [])
-  const copyId = async () => {
-    await navigator.clipboard.writeText(`${user?.playerId}`)
-    toast.success(t('ID Copied'))
-  }
 
   const depositPercentage = user?.vipLevelDetails?.depositPer
   const result =
@@ -101,7 +98,7 @@ const PersonalCenterPage = () => {
                 <h5 className="mt-1 text-white font-size-24 font-weight-500">
                   {user?.playerId ? user?.playerId : t('User')}
                 </h5>
-                <button className="userButtonCopy mt-2" onClick={copyId}>
+                <button className="userButtonCopy mt-2" onClick={()=>copyToClipboard(`${user?.playerId}`,(t('ID Copied')))}>
                   <Image
                     src={'/assets/images/linking.png'}
                     alt={t('Logo Link')}
