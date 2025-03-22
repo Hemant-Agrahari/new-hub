@@ -8,7 +8,7 @@ import dayjs from 'dayjs'
 import { useTranslation } from 'react-i18next'
 import { PostMethod } from '@/services/fetchAPI'
 import Loader from '../common/mui-component/Loader'
-import CustomPagination from '../common/CustomPagination'
+import CustomMuiPagination from '../common/mui-component/CustomMuiPagination'
 import { Button } from '../common'
 
 const DepositTab = () => {
@@ -140,10 +140,11 @@ const DepositTab = () => {
       </div>
       {depositReport?.totalCount && depositReport?.totalCount > 0 && (
         <div className="depositPagination">
-          <CustomPagination
+          <CustomMuiPagination
             className="pagination-text"
-            page={pageSkip / pageLimit + 1}
-            count={Math.ceil(depositReport.totalCount / pageLimit)}
+            pageSkip={pageSkip}
+            totalCount={depositReport?.totalCount}
+            pageLimit={pageLimit}
             onChange={(e, v: number) => {
               setPageSkip((v - 1) * pageLimit)
             }}

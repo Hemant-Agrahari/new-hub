@@ -7,7 +7,7 @@ import React, { useEffect, useState } from 'react'
 import DatePicker from 'react-datepicker'
 import { useTranslation } from 'react-i18next'
 import Loader from '../common/mui-component/Loader'
-import CustomPagination from '../common/CustomPagination'
+import CustomMuiPagination from '../common/mui-component/CustomMuiPagination'
 import { Button } from '../common'
 
 const Statistics = () => {
@@ -133,12 +133,11 @@ const Statistics = () => {
       </div>
       {statisticsReport?.totalCount && statisticsReport?.totalCount > 0 && (
         <div className="depositPagination">
-          <CustomPagination
+          <CustomMuiPagination
             className="pagination-text"
-            page={pageSkip / 10 + 1}
-            count={Math.ceil(
-              Number(statisticsReport?.totalCount || 1) / Number(pageLimit),
-            )}
+            pageSkip={pageSkip}
+            totalCount={statisticsReport?.totalCount}
+            pageLimit={pageLimit}
             onChange={(e, v: number) => {
               setPageSkip((v - 1) * pageLimit)
             }}

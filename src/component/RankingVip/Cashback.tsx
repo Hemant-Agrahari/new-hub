@@ -3,7 +3,7 @@ import CashbackImg from '../../../public/assets/images/cashback.png'
 import { useAppSelector } from '@/redux/hooks'
 import { useRouter } from 'next/router'
 import { useTranslation } from 'react-i18next'
-import { Button } from '../common'
+import { Button } from '@/component/common'
 
 const Cashback = () => {
   const user = useAppSelector((state) => state.user.user)

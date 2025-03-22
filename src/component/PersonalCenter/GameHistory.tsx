@@ -10,7 +10,7 @@ import dayjs from 'dayjs'
 import { Button } from '../common'
 import { PostMethod } from '@/services/fetchAPI'
 import Loader from '../common/mui-component/Loader'
-import CustomPagination from '../common/CustomPagination'
+import CustomMuiPagination from '../common/mui-component/CustomMuiPagination'
 
 const GameHistory = () => {
   const user = useAppSelector((state) => state.user.user)
@@ -184,12 +184,11 @@ const GameHistory = () => {
       </div>
       {gameHistory?.totalCount && gameHistory?.totalCount > 0 && (
         <div className="depositPagination">
-          <CustomPagination
+          <CustomMuiPagination
             className="pagination-text"
-            page={pageSkip / 10 + 1}
-            count={Math.ceil(
-              (Number(gameHistory?.totalCount ?? 0) || 1) / Number(pageLimit),
-            )}
+            pageSkip={pageSkip}
+            totalCount={gameHistory?.totalCount}
+            pageLimit={pageLimit}
             onChange={(e, v: number) => {
               setPageSkip((v - 1) * pageLimit)
             }}
