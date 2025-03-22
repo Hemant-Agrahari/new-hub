@@ -141,13 +141,13 @@ const AffiliateModal: React.FC<Props> = ({
                     >
                       {t('Submit')}
                     </Button>
-                    <button
+                    <Button
                       onClick={() => setOpen(false)}
                       type="button"
                       className="modal-btn-losign mt-3"
                     >
                       {t('Cancel')}
-                    </button>
+                    </Button>
                   </div>
                 </form>
               </Box>

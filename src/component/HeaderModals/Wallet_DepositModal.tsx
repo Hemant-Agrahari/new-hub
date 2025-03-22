@@ -21,7 +21,7 @@ import { logError, removeExtraSymbols } from '@/utils'
 import { useFormik } from 'formik'
 import * as yup from 'yup'
 import CurrencyExchangeIcon from '@mui/icons-material/CurrencyExchange'
-import { CustomOutlinedInput } from '../common'
+import { Button, CustomOutlinedInput } from '../common'
 import { useRouter } from 'next/router'
 import FormErrorMessage from '../common/FormErrorMessage'
 
@@ -374,9 +374,9 @@ const Wallet_DepositModal = () => {
           )}
 
           <div className="depositBtn">
-            <button className="modal-btn-CPF mt-3 fw-semibold" type="submit">
+            <Button className="modal-btn-CPF mt-3 fw-semibold" type="submit">
               {t('Deposit')}
-            </button>
+            </Button>
           </div>
         </div>
       </form>

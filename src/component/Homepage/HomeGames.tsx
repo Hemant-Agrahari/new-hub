@@ -8,6 +8,7 @@ import { logError, processGames, removeExtraSymbols } from '@/utils'
 import BackToTop from '../common/BacktoTop'
 import { useTranslation } from 'react-i18next'
 import Loader from '../common/mui-component/Loader'
+import { Button } from '../common'
 
 const HomeGames = ({ handleGameLimit, provider, games, totalGames }: any) => {
   const base_url = process.env.NEXT_PUBLIC_IMAGE_URL
@@ -125,13 +126,13 @@ const HomeGames = ({ handleGameLimit, provider, games, totalGames }: any) => {
       <div className="d-flex justify-content-center">
         {totalGames > displayedGames.length && (
           <div className="loginSignUp-btn">
-            <button
+            <Button
               type="button"
               className="btn signUp-btn"
               onClick={() => handleGameLimit(24)}
             >
               {t('Load more')}
-            </button>
+            </Button>
           </div>
         )}
         {displayedGames.length ? <BackToTop /> : ''}

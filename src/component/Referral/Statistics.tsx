@@ -8,6 +8,7 @@ import DatePicker from 'react-datepicker'
 import { useTranslation } from 'react-i18next'
 import Loader from '../common/mui-component/Loader'
 import CustomPagination from '../common/CustomPagination'
+import { Button } from '../common'
 
 const Statistics = () => {
   const user = useAppSelector((state) => state.user.user)
@@ -88,9 +89,9 @@ const Statistics = () => {
               placeholderText={t('Start - End Date')}
             />
           </FormControl>
-          <button className="search-btn" onClick={handleSearch}>
+          <Button className="search-btn" onClick={handleSearch}>
             {t('Search')}
-          </button>
+          </Button>
         </div>
 
         <div className="depositTable over-flow-x-auto">

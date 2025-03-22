@@ -332,7 +332,7 @@ const Header = ({ handleSearch, searchQuery, setActive, active }: any) => {
                       : userChips?.toFixed(2)}
                 </span>
               </div>
-              <button
+              <Button
                 className="btn deposit-btn"
                 onClick={() => setOpenWalletModal(true)}
               >
@@ -343,7 +343,7 @@ const Header = ({ handleSearch, searchQuery, setActive, active }: any) => {
                   height={22}
                 />
                 <span className="d-none d-md-block ">{t('Deposit')}</span>
-              </button>
+              </Button>
             </div>
             <div className="headerProfile header-paper">
               <Button
@@ -414,7 +414,7 @@ const Header = ({ handleSearch, searchQuery, setActive, active }: any) => {
                                 />
                               </div>
                               <div className="user-name">{user?.playerId}</div>
-                              <button
+                              <Button
                                 className="btn userCopy-btn"
                                 onClick={() =>
                                   copyToClipboard(
@@ -422,7 +422,7 @@ const Header = ({ handleSearch, searchQuery, setActive, active }: any) => {
                                     t('ID Copied!'),
                                   )
                                 }
-                              ></button>
+                              ></Button>
                             </div>
                             <div className="user-levelScore">
                               <div className="userLevel">
@@ -724,20 +724,20 @@ const Header = ({ handleSearch, searchQuery, setActive, active }: any) => {
               />
             </div>
 
-            <button
+            <Button
               type="button"
               className="btn login-btn"
               onClick={() => handleLoginSignupTab(0)}
             >
               {t('Log in')}
-            </button>
-            <button
+            </Button>
+            <Button
               type="button"
               className="btn signUp-btn  btn-gradient"
               onClick={() => handleLoginSignupTab(1)}
             >
               {t('Register')}
-            </button>
+            </Button>
             <div>
               <LanguageSwitcher />
             </div>

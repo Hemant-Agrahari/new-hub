@@ -5,6 +5,7 @@ import { Dispatch, SetStateAction } from 'react'
 import Wallet_DepositModal from './Wallet_DepositModal'
 import Withdraw_modal1 from './Withdraw_modal1'
 import { useTranslation } from 'react-i18next'
+import { Button } from '../common'
 
 type WalletProps = {
   handleCloseWalletModal: () => void
@@ -29,12 +30,12 @@ const WalletPopup: React.FC<WalletProps> = ({
         className="modal-content wallet-popup-container wallet-popup-containe-color"
       >
         <div className="modal_closebtn">
-          <button type="button" className="close_form_btn">
+          <Button type="button" className="close_form_btn">
             <CloseIcon
               onClick={handleCloseWalletModal}
               className="closeBTN text-white"
             />
-          </button>
+          </Button>
         </div>
         <div className="modal-body p-0">
           <Typography

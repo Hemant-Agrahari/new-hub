@@ -118,7 +118,7 @@ const AvatarChangeModal = () => {
             })}
           </div>
           <div className="userDisplayButton mt-3">
-            <button
+            <Button
               className="userLeaveButton"
               onClick={() => {
                 setOpenUserDisplay(false)
@@ -126,7 +126,7 @@ const AvatarChangeModal = () => {
               }}
             >
               {t('Leave')}
-            </button>
+            </Button>
             <Button
               className="userSaveButton mx-3"
               isLoading={isMutating}

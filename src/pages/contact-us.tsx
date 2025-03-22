@@ -9,6 +9,7 @@ import { useTranslation } from 'react-i18next'
 import dynamic from 'next/dynamic'
 import { withZodSchema } from 'formik-validator-zod'
 import { validationMsg } from '@/utils/validationMsg'
+import { Button } from '@/component/common'
 
 export const getStaticProps: GetStaticProps = async (context) => {
   const { locale } = context
@@ -156,12 +157,12 @@ function ContactUs() {
                     ) : null}
                   </div>
                   <div className="col-12">
-                    <button
+                    <Button
                       type="submit"
                       className="btns btn_secondary w-100 mt-2 mt-md-3 text-white font-weight-600"
                     >
                       {t('Send Your Message')}
-                    </button>
+                    </Button>
                   </div>
                 </div>
               </form>

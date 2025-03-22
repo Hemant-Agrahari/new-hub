@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward'
+import { Button } from '.'
 
 const BackToTop: React.FC = () => {
   const [isVisible, setIsVisible] = useState(false)
@@ -34,9 +35,9 @@ const BackToTop: React.FC = () => {
   return (
     <div className="loginSignUp-btn back-to-top">
       {isVisible && (
-        <button type="button" className="btn backtopbtn" onClick={scrollToTop}>
+        <Button type="button" className="btn backtopbtn" onClick={scrollToTop}>
           <ArrowUpwardIcon />
-        </button>
+        </Button>
       )}
     </div>
   )

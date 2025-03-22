@@ -16,6 +16,7 @@ import React, { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { toast } from 'react-toastify'
 import * as Yup from 'yup'
+import { Button } from '../common'
 
 type Props = {
   handleCloseWalletModal: () => void
@@ -161,9 +162,9 @@ const Withdraw_modal1: React.FC<Props> = ({ handleCloseWalletModal }) => {
         </Box>
 
         <div className="depositBtn">
-          <button type="submit" className="modal-btn-withdraw mt-4">
+          <Button type="submit" className="modal-btn-withdraw mt-4">
             {loading ? t('Loading...') : t('Withdraw')}
-          </button>
+          </Button>
         </div>
       </div>
     </form>

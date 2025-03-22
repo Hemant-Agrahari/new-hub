@@ -3,6 +3,7 @@ import CashbackImg from '../../../public/assets/images/cashback.png'
 import { useAppSelector } from '@/redux/hooks'
 import { useRouter } from 'next/router'
 import { useTranslation } from 'react-i18next'
+import { Button } from '../common'
 
 const Cashback = () => {
   const user = useAppSelector((state) => state.user.user)
@@ -27,37 +28,37 @@ const Cashback = () => {
         </div>
 
         <div className="col-6 col-sm-6 col-md-6 col-lg-3 cashback_button">
-          <button className="cashback_button1">
+          <Button className="cashback_button1">
             <div className="cash_btn">{t('Original Games')}</div>
             <div className="original-cashback-percententage">
               {user?.origanlCashBack ? user?.origanlCashBack : 0}%
             </div>
-          </button>
+          </Button>
         </div>
         <div className="col-6 col-sm-6 col-md-6 d-lg-none">
-          <button className="cashback_buttonBonus1">
+          <Button className="cashback_buttonBonus1">
             {t('Original Games')}
-          </button>
+          </Button>
         </div>
         <div className="col-6 col-sm-6 col-md-6 col-lg-3 cash-back-button-div">
-          <button className="cashback_button1">
+          <Button className="cashback_button1">
             <div className="cash_btn ">{t('Live Casino')}</div>
             <div className="live-casino-div yellow-vivid-color">
               {user?.liveCasino ? user?.liveCasino : 0}%
             </div>
-          </button>
+          </Button>
         </div>
         <div className="col-6 col-sm-6 col-md-6 col-lg-3 d-none d-lg-block d-md-block">
-          <button
+          <Button
             className="cashback_buttonBonus2"
             onClick={() => router.push('#vip-slider')}
           >
             <div className="cash-btn">{t('Bonus')}</div>
-          </button>
+          </Button>
         </div>
 
         <div className="col-12 col-sm-12 col-md-12 col-lg-3 mt-2 d-lg-none d-sm-flex justify-content-center d-md-none">
-          <button className="cashback_buttonBonus2">{t('Bonus')}</button>
+          <Button className="cashback_buttonBonus2">{t('Bonus')}</Button>
         </div>
       </div>
       {/* CASHBACK Cards ======= */}

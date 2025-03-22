@@ -123,7 +123,7 @@ const Login: React.FC<LoginProps> = ({
       className={`modal-content ${openForgetPasswordModal ? 'd-none' : ''} `}
     >
       <div className="modal_closebtn">
-        <button
+        <Button
           type="button"
           className="close_form_btn"
           data-bs-dismiss="modal"
@@ -133,7 +133,7 @@ const Login: React.FC<LoginProps> = ({
             className="text-white"
             onClick={() => handleCloseLoginModal()}
           />
-        </button>
+        </Button>
       </div>
       <div className="modal-body">
         <Box className="TabLogin_Signup">

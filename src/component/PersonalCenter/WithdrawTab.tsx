@@ -9,6 +9,7 @@ import { useTranslation } from 'react-i18next'
 import { PostMethod } from '@/services/fetchAPI'
 import Loader from '../common/mui-component/Loader'
 import CustomPagination from '../common/CustomPagination'
+import { Button } from '../common'
 
 const WithdrawTab = () => {
   const user = useAppSelector((state) => state.user.user)
@@ -95,9 +96,9 @@ const WithdrawTab = () => {
             placeholderText={t('"Start - End Date"')}
           />
         </FormControl>
-        <button className="search-btn" onClick={handleSearch}>
+        <Button className="search-btn" onClick={handleSearch}>
           {t('Search')}
-        </button>
+        </Button>
       </div>
       <div className="depositTable deposit-table-content">
         {isLoading ? (
