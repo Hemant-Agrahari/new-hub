@@ -9,6 +9,7 @@ import { toast } from 'react-toastify'
 import Image from 'next/image'
 import { useTranslation } from 'react-i18next'
 import { logError } from '@/utils'
+import {copyToClipboard} from '@/utils/commonMethod'
 
 const InvitePartner = () => {
   const user = useAppSelector((state) => state.user.user)
@@ -40,15 +41,6 @@ const InvitePartner = () => {
   }
   const handleTooltipOpen = () => {
     setTooltipOpen(true)
-  }
-
-  const inviteUrlCopy = async () => {
-    await navigator.clipboard.writeText(`${inviteData?.inviteUrl}`)
-    toast.success(t('Link copied!'))
-  }
-  const inviteCodeCopy = async () => {
-    await navigator.clipboard.writeText(`${inviteData?.inviteCode}`)
-    toast.success(t('Code copied!'))
   }
 
   return (
@@ -92,7 +84,7 @@ const InvitePartner = () => {
                     <Button
                       disableRipple
                       variant="outlined"
-                      onClick={inviteUrlCopy}
+                      onClick={()=>copyToClipboard(`${inviteData?.inviteUrl}`,t('Code Copied!'))}
                       className="border-0"
                     >
                       <img src="/assets/images/userCopy-iocn.png" alt="" />
@@ -117,7 +109,7 @@ const InvitePartner = () => {
                     <Button
                       disableRipple
                       variant="outlined"
-                      onClick={inviteCodeCopy}
+                      onClick={()=> copyToClipboard(`${inviteData?.inviteCode}`,t('Link Copied!'))}
                       className="border-0"
                     >
                       <img

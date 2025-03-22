@@ -44,6 +44,7 @@ import { setTab } from '@/redux/games/gamesReducer'
 import { CustomOutlinedInput } from '@/component/common'
 import { useTranslation } from 'react-i18next'
 import LanguageSwitcher from '@/component/common/LanguageSwitcher'
+import { copyToClipboard } from '@/utils/commonMethod'
 
 const Header = ({ handleSearch, searchQuery, setActive, active }: any) => {
   const { t } = useTranslation()
@@ -161,11 +162,6 @@ const Header = ({ handleSearch, searchQuery, setActive, active }: any) => {
     } else {
       setOpenLoginModal(true)
     }
-  }
-
-  const copyId = async () => {
-    await navigator.clipboard.writeText(`${user?.playerId}`)
-    toast.success(t('ID Copied'))
   }
 
   const depositPercentage = user?.vipLevelDetails?.depositPer
@@ -393,8 +389,7 @@ const Header = ({ handleSearch, searchQuery, setActive, active }: any) => {
                           : 'left bottom',
                     }}
                   >
-                    <Paper className='header-paper'
-                    >
+                    <Paper className="header-paper">
                       <ClickAwayListener onClickAway={handleClose}>
                         <MenuList
                           autoFocusItem={open}
@@ -421,7 +416,12 @@ const Header = ({ handleSearch, searchQuery, setActive, active }: any) => {
                               <div className="user-name">{user?.playerId}</div>
                               <button
                                 className="btn userCopy-btn"
-                                onClick={copyId}
+                                onClick={() =>
+                                  copyToClipboard(
+                                    `${user?.playerId}`,
+                                    t('ID Copied!'),
+                                  )
+                                }
                               ></button>
                             </div>
                             <div className="user-levelScore">
@@ -449,8 +449,7 @@ const Header = ({ handleSearch, searchQuery, setActive, active }: any) => {
                                         2,
                                       )}
                                       /
-                                      <span className='yellow-shade'
-                                      >
+                                      <span className="yellow-shade">
                                         <Image
                                           src="/assets/images/coin.png"
                                           alt={t('coin')}
@@ -532,7 +531,10 @@ const Header = ({ handleSearch, searchQuery, setActive, active }: any) => {
                               <ul className="profilePane-ul">
                                 <li onClick={handleToggle}>
                                   <Link href="/referral" className="referral">
-                                    <Image src={SidemoneyImg} alt="side-money" />
+                                    <Image
+                                      src={SidemoneyImg}
+                                      alt="side-money"
+                                    />
                                     {t('Referral')}
                                   </Link>
                                 </li>
@@ -575,7 +577,7 @@ const Header = ({ handleSearch, searchQuery, setActive, active }: any) => {
                                 <Image
                                   src={connectFB}
                                   alt={t('Facebook logo')}
-                                  className='facebook-height'
+                                  className="facebook-height"
                                 />
                                 <Image
                                   src={connectGoogle}
@@ -584,9 +586,7 @@ const Header = ({ handleSearch, searchQuery, setActive, active }: any) => {
                                 />
                               </>
                             )}
-                            <div
-                              className="hpMenu-botm hpmenu-botm-logout"
-                            >
+                            <div className="hpMenu-botm hpmenu-botm-logout">
                               <div className="profile-logout">
                                 <Link
                                   href="/"
@@ -606,7 +606,7 @@ const Header = ({ handleSearch, searchQuery, setActive, active }: any) => {
             </div>
             <div className="headerMsg notification-container">
               <div className="msgIcon" onClick={handleClick}>
-                <NotificationsIcon className='notification-icons'  />
+                <NotificationsIcon className="notification-icons" />
                 {!allNotifications?.isRead && (
                   <span className="activeMsg"></span>
                 )}
@@ -645,12 +645,8 @@ const Header = ({ handleSearch, searchQuery, setActive, active }: any) => {
                       }}
                     >
                       <div className="d-flex  align-items-center p-3">
-                        <div
-                          className="p-2 rounded-circle d-flex align-items-center justify-content-center notification-active-color"
-                        >
-                          <NotificationsNoneOutlined
-                            className="font-size-32 notification-icons"
-                          />
+                        <div className="p-2 rounded-circle d-flex align-items-center justify-content-center notification-active-color">
+                          <NotificationsNoneOutlined className="font-size-32 notification-icons" />
                         </div>
                         <div className="flex-grow-1 d-flex justify-content-between align-items-center ms-3">
                           <Typography variant="body1">
@@ -658,10 +654,7 @@ const Header = ({ handleSearch, searchQuery, setActive, active }: any) => {
                               {notification?.title}
                             </strong>
                             <br />
-                            <p
-                              className=" font-size-14 font-weight-400 mb-0"
-                              
-                            >
+                            <p className=" font-size-14 font-weight-400 mb-0">
                               {notification?.content}
                             </p>
                           </Typography>
