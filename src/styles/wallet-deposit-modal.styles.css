@@ -148,7 +148,7 @@
 
 .wallet-participate-checkbox .MuiSvgIcon-root{
   font-size: 30px;
-  color: gray;
+  color: var(--gray-100);
 }
 
 @media screen and (max-width: 480px) {

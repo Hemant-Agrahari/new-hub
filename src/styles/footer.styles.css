@@ -48,7 +48,7 @@ footer .fooLink-desktop .fooText {
   font-size: clamp(16px, 1.8vw, 14px);
   line-height: 20px;
   align-items: center;
-  color: rgb(255, 255, 255);
+  color: var(--white);
   margin: 12px 0 20px;
 }
 
@@ -200,7 +200,7 @@ footer .fooLink-desktop .fooSocial .w-75 {
 }
 
 .fooLink-mobile .MuiAccordionSummary-expandIconWrapper {
-  color: #90a3c7;
+  color: var(--steel-blue);
 }
 
 .fooLink-mobile .MuiAccordionDetails-root {

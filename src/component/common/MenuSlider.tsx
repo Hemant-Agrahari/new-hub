@@ -421,7 +421,7 @@ function MenuSlider({
                         src={item.image}
                         width={50}
                         height={50}
-                        alt={t(item.name)} // Changed from item.value to item.name
+                        alt={t(item.name)}
                       />
                       <div className="title_template text-capitalize">
                         {t(item.name)}

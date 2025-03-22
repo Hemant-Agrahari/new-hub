@@ -137,7 +137,7 @@
 
 .depositTable table > :not(caption) > * > * {
   padding: 0.5rem 0.5rem;
-  color: white;
+  color: var(--white);
   background-color: transparent;
   font-size: 15px;
   font-weight: 500;

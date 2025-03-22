@@ -32,7 +32,7 @@ const BackToTop: React.FC = () => {
   }, [])
 
   return (
-    <div className="loginSignUp-btn" style={{ marginLeft: '12px' }}>
+    <div className="loginSignUp-btn back-to-top">
       {isVisible && (
         <button type="button" className="btn backtopbtn" onClick={scrollToTop}>
           <ArrowUpwardIcon />

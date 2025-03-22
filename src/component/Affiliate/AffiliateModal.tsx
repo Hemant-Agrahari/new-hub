@@ -111,7 +111,7 @@ const AffiliateModal: React.FC<Props> = ({
                   {fields.map((field) => (
                     <div key={field.name} className="mb-3">
                       <CustomOutlinedInput
-                        className="form-field"
+                        className="form-field custom-input"
                         readOnly={field?.readOnly}
                         fullWidth
                         placeholder={field.label}
@@ -129,11 +129,6 @@ const AffiliateModal: React.FC<Props> = ({
                         }
                         multiline={field.multiline}
                         rows={field.rows}
-                        sx={{
-                          '& .MuiOutlinedInput-input': {
-                            color: '#fff',
-                          },
-                        }}
                         {...formik.getFieldProps(field.name)}
                       />
                     </div>

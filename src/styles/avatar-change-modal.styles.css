@@ -50,18 +50,30 @@
   font-size: 16px;
 }
 .userDisplayPC {
-    background: linear-gradient(
-      158.06deg,
-      var(--gray-800, --purple-plum) 0.09%,
-      var(--gray-800, --purple-heart) 85.68%
-    );
-    border-radius: 10px;
-    padding: 12px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .userDisplayButton {
-    display: flex;
-    justify-content: center;
-  }
+  background: linear-gradient(
+    158.06deg,
+    var(--gray-800, --purple-plum) 0.09%,
+    var(--gray-800, --purple-heart) 85.68%
+  );
+  border-radius: 10px;
+  padding: 12px;
+  display: flex;
+  align-items: center;
+}
+
+.userDisplayButton {
+  display: flex;
+  justify-content: center;
+}
+
+.custom-input {
+  color: var(--white);
+}
+
+.custom-input .MuiOutlinedInput-input {
+  color: var(--white);
+}
+
+.back-to-top {
+  margin-left: 12px;
+}

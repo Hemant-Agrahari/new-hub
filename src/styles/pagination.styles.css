@@ -10,16 +10,20 @@
 }
 
 .pagination-text ul li .Mui-selected {
-  color: white;
+  color: var(--white);
   font-weight: 800;
-  background: linear-gradient(90deg, var(--blue-vivid) 0%, var(--blue-violet) 98.45%);
+  background: linear-gradient(
+    90deg,
+    var(--blue-vivid) 0%,
+    var(--blue-violet) 98.45%
+  );
   border: 2px solid var(--blue) !important;
 }
 
 .pagination-text ul li button {
-  color: white;
+  color: var(--white);
   font-weight: 800;
-  border: 2px solid var(--gray-100,   --deep-pink);
+  border: 2px solid var(--gray-100, --deep-pink);
 }
 
 .depositPagination .deposit-btn {
@@ -27,7 +31,11 @@
   font-size: 14px;
   line-height: 22px;
   color: var(--white);
-  background: linear-gradient(180deg, #c90023 0%, #d73a50 100%);
+  background: linear-gradient(
+    180deg,
+    var(--crimson-2) 0%,
+    var(--raspberry-red-2) 100%
+  );
   border-radius: 10px;
   padding: 8px 12px;
 }
@@ -40,12 +48,12 @@
 .depositPagination .btn.paginationButton2 {
   background-color: var(--burgundy-dark);
   border: none;
-  color:var(--white);
+  color: var(--white);
 }
 
 .pagination-text-white {
-    color: white !important;
-  }
+  color: var(--white) !important;
+}
 
 @media screen and (max-width: 1199.98px) {
   .depositPagination {

@@ -1,34 +1,34 @@
 import { OutlinedInput, styled } from '@mui/material'
 
 const CustomOutlinedInput = styled(OutlinedInput)(({ theme }) => ({
-  background: 'var(--gray-600, #3C3F48)',
+  background: 'var(--gray-600, --gray-500)',
   borderRadius: '8px',
   '& .MuiOutlinedInput-input': {
-    color: 'var(--white)', // Text color
-    border: 'none', // Remove border
-    background: 'transparent', // Transparent background
+    color: 'var(--white)', 
+    border: 'none',
+    background: 'transparent',
   },
   '& .MuiInputBase-input::placeholder': {
-    color: 'var(--white)', // Placeholder color
+    color: 'var(--white)',
     opacity: 1,
   },
   '& .MuiOutlinedInput-root': {
     '& fieldset': {
-      borderColor: 'transparent', // Hide fieldset border
+      borderColor: 'transparent',
     },
     '&:hover fieldset': {
-      borderColor: 'transparent', // Hide fieldset border on hover
+      borderColor: 'transparent',
     },
     '&.Mui-focused fieldset': {
-      borderColor: 'transparent', // Hide fieldset border when focused
+      borderColor: 'transparent',
     },
-    borderColor: 'transparent', // Additional override for border color
+    borderColor: 'transparent',
   },
   '& .MuiInputLabel-root': {
-    color: 'var(--white)', // Label color
+    color: 'var(--white)',
   },
   '& .MuiInputAdornment-root': {
-    color: 'var(--white)', // Adornment color
+    color: 'var(--white)',
   },
 }))
 export default CustomOutlinedInput

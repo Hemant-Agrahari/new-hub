@@ -1,5 +1,5 @@
 .customToast {
-  background-color: var(--gray-600, #85194b);
+  background-color: var(--gray-600, --wine-red);
   color: (--white);
   font-size: 15px;
   border-radius: 8px;

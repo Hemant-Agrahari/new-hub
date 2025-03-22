@@ -6,7 +6,6 @@ import { useRouter } from 'next/router'
 import { withZodSchema } from 'formik-validator-zod'
 import { z } from 'zod'
 
-// Material-UI components
 import {
   Box,
   Checkbox,
@@ -17,8 +16,6 @@ import {
 import { Email, Https, Visibility, VisibilityOff } from '@mui/icons-material'
 import RedeemIcon from '@mui/icons-material/Redeem'
 import SupportAgentOutlinedIcon from '@mui/icons-material/SupportAgentOutlined'
-
-// Custom or local imports
 import { CustomOutlinedInput } from '../common'
 import { useAppDispatch } from '@/redux/hooks'
 import { setUser } from '@/redux/user/userReducer'
@@ -111,7 +108,6 @@ const SignIn = ({
     },
   })
 
-  // ============ Password Function =======
   const handleClickShowPassword = () => setShowPassword((show) => !show)
 
   const handleMouseDownPassword = (

@@ -337,7 +337,6 @@ const PrivacyPolicy = () => {
                   </div>
                 </li>
                 <li className="mt-lg-5 mt-md-4 mt-3">
-                  {' '}
                   <div className="row gy-2">
                     <div className="col-md-4">
                       <p className="fw-semibold fs-40 text-white">

@@ -11,14 +11,14 @@ const BootstrapTooltip = styled(({ className, ...props }: any) => (
   />
 ))(({ theme }) => ({
   [`& .${tooltipClasses.arrow}`]: {
-    color: '#181E46',
+    color: 'var(--midnight-blue)',
     width: '20px',
     height: '14px',
     marginTop: '-16px !important',
     bottom: '-7px !important',
   },
   [`& .${tooltipClasses.tooltip}`]: {
-    backgroundColor: '#181E46',
+    backgroundColor: 'var(--midnight-blue)',
     border: '1px solid var(--white)',
     fontWeight: '500',
     fontSize: '11px',
