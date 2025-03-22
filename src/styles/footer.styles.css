@@ -247,6 +247,10 @@ footer .fooLink-desktop .fooSocial .w-75 {
   margin-bottom: 10px;
 }
 
+.footer-line{
+  border-right: 1px solid var(--slate-gray);
+}
+
 @media screen and (max-width: 767px) {
   footer {
     padding: 20px 0 0;

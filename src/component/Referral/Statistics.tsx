@@ -54,7 +54,6 @@ const Statistics = () => {
       }
     } catch (error: unknown) {
       if (error instanceof Error) {
-        // toast.error(error.message)
         logError(error)
       }
     } finally {
@@ -94,18 +93,11 @@ const Statistics = () => {
           </button>
         </div>
 
-        <div className="depositTable" style={{ overflowX: 'auto' }}>
+        <div className="depositTable over-flow-x-auto">
           {isLoading ? (
             <Loader />
           ) : (
-            <table
-              className="table table-border"
-              style={{
-                backgroundColor: 'transparent',
-                color: 'white !important',
-                borderCollapse: 'collapse',
-              }}
-            >
+            <table className="table table-border text-white table-container">
               <thead>
                 <tr>
                   <th scope="col">{t('Bonus')}</th>
@@ -120,9 +112,7 @@ const Statistics = () => {
                       <td>{item?.bonus?.toFixed(2)}</td>
                       <td>{item.nickName}</td>
                       <td>
-                        <span
-                          style={{ fontWeight: '400', marginRight: '12px' }}
-                        >
+                        <span className="font-weight-400 mr-3">
                           {item?.date?.split('T')[0]}
                         </span>
                       </td>
@@ -140,7 +130,6 @@ const Statistics = () => {
           )}
         </div>
       </div>
-      {/* show pagination only when totalcount greater than 0  */}
       {statisticsReport?.totalCount && statisticsReport?.totalCount > 0 && (
         <div className="depositPagination">
           <CustomPagination

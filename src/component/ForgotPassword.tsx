@@ -82,11 +82,7 @@ const ForgetPasswordPopup = ({
               <form onSubmit={formik.handleSubmit}>
                 <CustomOutlinedInput
                   as={OutlinedInput}
-                  sx={{
-                    '& .MuiOutlinedInput-input': { color: '#fff' },
-                    background: 'var(--gray-500)',
-                    borderRadius: 2,
-                  }}
+                  className="forgot-password-input"
                   id="input-with-icon-textfield"
                   placeholder={t('E-mail')}
                   startAdornment={

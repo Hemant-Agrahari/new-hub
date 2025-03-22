@@ -144,7 +144,7 @@ const DepositTab = () => {
             page={pageSkip / pageLimit + 1}
             count={Math.ceil(depositReport.totalCount / pageLimit)}
             onChange={(e, v: number) => {
-              setPageSkip((v - 1) * pageLimit) // Update the skip value on page change
+              setPageSkip((v - 1) * pageLimit)
             }}
           />
         </div>

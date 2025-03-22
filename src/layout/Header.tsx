@@ -393,8 +393,7 @@ const Header = ({ handleSearch, searchQuery, setActive, active }: any) => {
                           : 'left bottom',
                     }}
                   >
-                    <Paper
-                      style={{ background: 'var(--gray-600, --burgundy-red)' }}
+                    <Paper className='header-paper'
                     >
                       <ClickAwayListener onClickAway={handleClose}>
                         <MenuList
@@ -533,7 +532,7 @@ const Header = ({ handleSearch, searchQuery, setActive, active }: any) => {
                               <ul className="profilePane-ul">
                                 <li onClick={handleToggle}>
                                   <Link href="/referral" className="referral">
-                                    <Image src={SidemoneyImg} alt="" />
+                                    <Image src={SidemoneyImg} alt="side-money" />
                                     {t('Referral')}
                                   </Link>
                                 </li>
@@ -576,19 +575,17 @@ const Header = ({ handleSearch, searchQuery, setActive, active }: any) => {
                                 <Image
                                   src={connectFB}
                                   alt={t('Facebook logo')}
-                                  style={{ height: '46px' }}
+                                  className='facebook-height'
                                 />
                                 <Image
                                   src={connectGoogle}
                                   alt={t('Gmail logo')}
-                                  style={{ height: '48px' }}
-                                  className="mt-2"
+                                  className="mt-2 gamil-height"
                                 />
                               </>
                             )}
                             <div
-                              className="hpMenu-botm"
-                              style={{ padding: '0' }}
+                              className="hpMenu-botm hpmenu-botm-logout"
                             >
                               <div className="profile-logout">
                                 <Link
@@ -619,7 +616,6 @@ const Header = ({ handleSearch, searchQuery, setActive, active }: any) => {
                 open={openPopover}
                 anchorEl={anchorEl}
                 className="notification-list"
-            
                 transformOrigin={{ horizontal: 'right', vertical: 'top' }}
                 anchorOrigin={{ horizontal: 'right', vertical: 'bottom' }}
               >

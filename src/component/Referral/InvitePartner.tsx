@@ -136,7 +136,7 @@ const InvitePartner = () => {
             <div className="revenue-col">
               <label>{t('Today Bonus')}</label>
               <span className="value">
-                ${' '}
+                $
                 {inviteData?.todayBonus?.toFixed(2)
                   ? inviteData?.todayBonus?.toFixed(2)
                   : 0}

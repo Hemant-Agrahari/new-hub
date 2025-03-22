@@ -674,6 +674,21 @@ main .loginSignUp-btn .signUp-btn {
   color: 'var(--gray-400)';
 }
 
+.header-paper{
+  background-color: 'var(--gray-600, --burgundy-red)';
+}
+
+.hpmenu-botm-logout{
+  padding: 0;
+}
+
+.facebook-height{
+  height: 46px;
+}
+.gmail-height{
+  height: 48px;
+}
+
 @media screen and (max-width: 1729px) {
   .header_toggle .logo-img {
     width: 100px;

@@ -61,7 +61,7 @@ const Footer = ({ active }: any) => {
         <div className="container">
           <div className="foo-linkSocial">
             <div className="fooLink-desktop">
-              <div style={{ borderRight: '1px solid #4d4d4d' }}>
+              <div className='footer-line'>
                 <div className="fooSocial">
                   <div className="w-25">
                     <Link href="/">
@@ -83,8 +83,7 @@ const Footer = ({ active }: any) => {
                 </div>
               </div>
               <div
-                className="footer_links w-100"
-                style={{ borderRight: '1px solid #4d4d4d' }}
+                className="footer_links w-100 footer-line"
               >
                 <div className="fooLink-col">
                   <div className="linkTitle">CASINO BET</div>
@@ -130,7 +129,6 @@ const Footer = ({ active }: any) => {
                   </ul>
                 </div>
               </div>
-
               <div className="social_icons_wrapper">
                 <div className="social_icons_contain_wrapper">
                   <div className="social_icons_contain">

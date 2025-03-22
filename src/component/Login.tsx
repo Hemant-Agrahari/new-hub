@@ -31,8 +31,8 @@ import { validationMsg } from '@/utils/validationMsg'
 type LoginProps = {
   handleCloseLoginModal: (redirection?: boolean) => void
   setOpenLoginModal: Dispatch<SetStateAction<boolean>>
-  tabIndex: number // Assuming tabIndex is of type number
-  setTabIndex: Dispatch<SetStateAction<number>> // Assuming setTabIndex is a function to set a number state
+  tabIndex: number
+  setTabIndex: Dispatch<SetStateAction<number>>
 }
 
 const Login: React.FC<LoginProps> = ({
@@ -60,7 +60,6 @@ const Login: React.FC<LoginProps> = ({
     setOpenForgetPasswordModal(true)
   }
 
-  // ============ Password Function =======
   const [showPassword, setShowPassword] = useState(false)
 
   const handleClickShowPassword = () => setShowPassword((show) => !show)

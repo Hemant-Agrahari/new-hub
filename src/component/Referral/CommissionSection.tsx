@@ -79,9 +79,7 @@ const CommissionSection = () => {
           </BootstrapTooltip>
         </ClickAwayListener>
       </div>
-      <div className="referalPageSection-titleText">
-        {t('LongTerm Income')}
-      </div>
+      <div className="referalPageSection-titleText">{t('LongTerm Income')}</div>
       <div className="getCommission-col">
         <div className="getCommission-colTop">
           <div className="getCommission-colTop-content">
@@ -91,16 +89,16 @@ const CommissionSection = () => {
                 <li>{t('The proportions of the 3 levels are as follows')}:</li>
                 <li>
                   {t('- Level')} 1:
-                  <span style={{ color: '#FFCD3C' }}> 50%</span> Platform
+                  <span className="yellow-bg"> 50%</span> Platform
                   {t('Platform Advantage')}
                 </li>
                 <li>
                   {t('- Level')} 2:
-                  <span style={{ color: '#FFCD3C' }}> 15%</span> Platform
+                  <span className="yellow-bg"> 15%</span> Platform
                   {t('Platform Advantage')}
                 </li>
                 <li>
-                  {t('- Level')} 3:<span style={{ color: '#FFCD3C' }}> 5%</span>{' '}
+                  {t('- Level')} 3:<span className="yellow-bg"> 5%</span>
                   {t('Platform Advantage')}
                 </li>
               </ul>
@@ -108,12 +106,22 @@ const CommissionSection = () => {
             <div className="long-term-income">{t('Commission Income')}</div>
           </div>
           <div className="getCommission-colTop-img">
-            <Image src={'/assets/images/get-commission-top.png'} alt="get-commission-level" width={608} height={504} />
+            <Image
+              src={'/assets/images/get-commission-top.png'}
+              alt="get-commission-level"
+              width={608}
+              height={504}
+            />
           </div>
         </div>
         <div className="getCommission-colBotm">
           <div className="leval-calculator-col">
-            <Image src={'/assets/images/profile-level.png'} alt="profile level" width={598} height={253} />
+            <Image
+              src={'/assets/images/profile-level.png'}
+              alt="profile level"
+              width={598}
+              height={253}
+            />
           </div>
           <div className="leval-calculator-col income-calculator">
             <div className="income-title">

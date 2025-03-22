@@ -26,6 +26,13 @@
   height: 3px;
 }
 
+
+.table-container{
+  background-color:transparent;
+  color: var(--white) !important;
+  border-collapse: collapse;
+}
+
 @media screen and (max-width: 1299px) {
   .depositTable tbody tr:last-child > * {
     border: none;

@@ -101,9 +101,6 @@ const PersonalCenterPage = () => {
                 <h5 className="mt-1 text-white font-size-24 font-weight-500">
                   {user?.playerId ? user?.playerId : t('User')}
                 </h5>
-                {/* <BootstrapTooltip arrow title="Upgrade Levels and Bonuses VIP upgrade needs to reach both the next deposit level and the bet amount upgrade conditions, you will automatically receive the corresponding VIP level bonus.">
-                               <div>Bootstrap</div>
-                           </BootstrapTooltip> */}
                 <button className="userButtonCopy mt-2" onClick={copyId}>
                   <Image
                     src={'/assets/images/linking.png'}
