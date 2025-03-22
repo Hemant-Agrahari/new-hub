@@ -8,7 +8,7 @@ interface FormErrorMessageProps {
 
 const FormErrorMessage: React.FC<FormErrorMessageProps> = ({ error, touched }) => {
   if (!touched || !error) return null;
-  return <div className="form-error-message text-danger">{error}</div>;
+  return <div className="form-error-message text-danger font-weight-800 mt-3">{error}</div>;
 }
-
+ 
 export default FormErrorMessage;

@@ -1,32 +1,24 @@
 .depositTable table {
   min-width: 600px;
 }
-
 .depositTable table > :not(caption) > * > * {
   text-align: center;
 }
-
 .game-history-table table {
   min-width: 900px;
 }
-
 .game-history-table table > :not(caption) > * > * {
   text-align: center;
 }
-
 .white-input > * {
   color: var(--white) !important;
 }
-
 .depositTable {
   margin-top: 20px;
 }
-
 .depositTable::-webkit-scrollbar {
   height: 3px;
 }
-
-
 .table-container{
   background-color:transparent;
   color: var(--white) !important;
