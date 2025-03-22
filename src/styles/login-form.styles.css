@@ -28,3 +28,7 @@
   width: 30px;
   height: 30px;
 }
+
+.login-age-verify-text{
+  color: var(--gray-200);
+}

@@ -349,7 +349,7 @@ const Header = ({ handleSearch, searchQuery, setActive, active }: any) => {
                 <span className="d-none d-md-block ">{t('Deposit')}</span>
               </button>
             </div>
-            <div className="headerProfile">
+            <div className="headerProfile header-paper">
               <Button
                 disableRipple
                 aria-controls={open ? 'headerProfile-menu' : undefined}
@@ -606,7 +606,7 @@ const Header = ({ handleSearch, searchQuery, setActive, active }: any) => {
             </div>
             <div className="headerMsg notification-container">
               <div className="msgIcon" onClick={handleClick}>
-                <NotificationsIcon style={{ color: 'var(--gray-100)' }} />
+                <NotificationsIcon className='notification-icons'  />
                 {!allNotifications?.isRead && (
                   <span className="activeMsg"></span>
                 )}
@@ -646,10 +646,7 @@ const Header = ({ handleSearch, searchQuery, setActive, active }: any) => {
                     >
                       <div className="d-flex  align-items-center p-3">
                         <div
-                          className="p-2 rounded-circle d-flex align-items-center justify-content-center"
-                          style={{
-                            backgroundColor: 'var(--gray-600,  --deep-pink)',
-                          }}
+                          className="p-2 rounded-circle d-flex align-items-center justify-content-center notification-active-color"
                         >
                           <NotificationsNoneOutlined
                             className="font-size-32 notification-icons"

@@ -105,7 +105,7 @@ const WithdrawTab = () => {
         ) : (
           <table className="table table-border">
             <thead>
-              <tr style={{ color: '#A0ABDB' }}>
+              <tr className='table-tr'>
                 <th scope="col">{t('Transaction Id')}</th>
                 <th scope="col">{t('Date')}</th>
                 <th scope="col">{t('Withdrawal Value')}</th>

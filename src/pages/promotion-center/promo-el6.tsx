@@ -35,7 +35,7 @@ const PromotionsFourth = () => {
   }, [id])
 
   return (
-    <div className="container" style={{ marginTop: '12vh' }}>
+    <div className="container margin-top-12">
       <div className="promotion-banner text-center">
         {isMutating ? (
           t('Loading...')

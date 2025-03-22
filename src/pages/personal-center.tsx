@@ -249,10 +249,7 @@ const PersonalCenterPage = () => {
                             className="coin-margin"
                           />
                           {user?.vipLevelDetails?.currenDeposit?.toFixed(2)}/
-                          <span
-                            style={{
-                              color: 'var(--yellow-vivid)',
-                            }}
+                          <span className='yellow-bg'
                           >
                             <Image
                               src="/assets/images/coin.png"
@@ -286,10 +283,7 @@ const PersonalCenterPage = () => {
                             className="coin-margin"
                           />
                           {user?.vipLevelDetails?.currentBet?.toFixed(2)}/
-                          <span
-                            style={{
-                              color: '#9643FF',
-                            }}
+                          <span className='medium-violet'
                           >
                             <Image
                               src="/assets/images/coin.png"

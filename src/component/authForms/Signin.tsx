@@ -225,7 +225,7 @@ const SignIn = ({
             {...formik.getFieldProps('terms')}
           />
           <div>
-            <Typography variant="body1" className='ml-1' sx={{ color: 'var(--gray-100)'}}>
+            <Typography variant="body1" className='ml-1 login-forgot-text'>
               {t('I am at least 18 years old and have read and agree to the')}
               &nbsp;
               <u
@@ -262,8 +262,7 @@ const SignIn = ({
           <div>
             <Typography
               variant="body1"
-              sx={{ color: 'var(--gray-100)' }}
-              className="mt-1"
+              className="mt-1 login-forgot-text"
             >
               {t('Receive promotions by Email')}
             </Typography>

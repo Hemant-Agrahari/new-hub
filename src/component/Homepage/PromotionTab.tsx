@@ -58,10 +58,7 @@ const PromotionTab = () => {
                     href={`/promotion-center/promo-el6?id=${item?._id}`}
                     className="promotion-img"
                   >
-                    <div className='w-100 position-relative'
-                      style={{
-                        paddingTop: '56.25%',
-                      }}
+                    <div className='w-100 position-relative promotion-tab-padding'
                       key={item?.uuid}
                     >
                       <Image
@@ -85,10 +82,7 @@ const PromotionTab = () => {
                     href={'/promotion-center/promo-static'}
                     className="promotion-img"
                   >
-                    <div className='w-100 position-relative'
-                      style={{
-                        paddingTop: '56.25%',
-                      }}
+                    <div className='w-100 position-relative promotion-tab-padding'
                       key={item?.uuid}
                     >
                       <Image

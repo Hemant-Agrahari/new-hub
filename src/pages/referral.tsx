@@ -37,7 +37,7 @@ const Referral = () => {
   }, [])
 
   return (
-    <div className="container" style={{ marginTop: '12vh' }}>
+    <div className="container margin-top-12">
       <div className="referalPage-tab">
         <TabContext value={referralTabValue}>
           <TabList

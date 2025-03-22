@@ -60,7 +60,6 @@ function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <link rel="icon" href="/favicon.png" />
-        {/* Other meta tags or links */}
       </Head>
       <style jsx global>{`
         html {

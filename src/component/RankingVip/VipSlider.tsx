@@ -109,7 +109,7 @@ const VipSlider = () => {
                         </h6>
                       </div>
                     </div>
-                    <hr style={{ opacity: 1 }} />
+                    <hr className='opacity-1'/>
                     <div className="slider-cashback">
                       <h6 className="sliderCashback-title">
                         {t('WITHDRAWAL PRIVILEGES')}
@@ -139,7 +139,7 @@ const VipSlider = () => {
                         </h6>
                       </div>
                     </div>
-                    <hr style={{ opacity: 1 }} />
+                    <hr className='opacity-1'/>
                     <div className="slider-cashback mb-10">
                       <div className="sliderCashback-title">
                         {t('CASHBACK')}

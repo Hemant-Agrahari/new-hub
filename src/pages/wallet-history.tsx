@@ -44,7 +44,7 @@ const WalletHistory = () => {
   }, [user])
 
   return (
-    <div className="container" style={{ marginTop: '12vh' }}>
+    <div className="container margin-top-12">
       <div className="DepositTab">
         <div  className="m-2 d-flex align-items-center">
           <Image
@@ -52,8 +52,7 @@ const WalletHistory = () => {
             alt='Back button'
             onClick={() => router.back()}
             width={25}
-            height={25}
-            style={{cursor:'pointer'}}
+            height={25} className='cursor-pointer'
           />
           <div
             className="m-2 font-weight-800 text-white font-size-18"

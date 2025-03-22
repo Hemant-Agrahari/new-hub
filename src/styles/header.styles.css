@@ -242,7 +242,7 @@ main .loginSignUp-btn .signUp-btn {
 
 .headerProfile-menu .MuiPopover-paper {
   width: 375px;
-  background: linear-gradient(107.38deg, #171d29 5.92%, #161c25 100%);
+  background: linear-gradient(107.38deg, var( --charcoal-black-1) 5.92%, var( --charcoal-black-2) 100%);
   border-radius: 8px;
 }
 
@@ -276,7 +276,7 @@ main .loginSignUp-btn .signUp-btn {
   height: 6px;
   border-radius: 100%;
   background: linear-gradient(90deg, var(--blue-violet) 0%, var(--blue-vivid) 98.45%);
-  box-shadow: 0 0 0 1px #141414;
+  box-shadow: 0 0 0 1px var(--charcoal-black-3);
 }
 
 .loginSignUp-btn .css-1o9s3wi-MuiInputBase-input-MuiOutlinedInput-input {
@@ -444,7 +444,7 @@ main .loginSignUp-btn .signUp-btn {
   .process-score
   .MuiLinearProgress-root
   .MuiLinearProgress-bar {
-  background-color: #efa318;
+  background-color: var(--golden-yellow);
 }
 
 .hpMenu-top
@@ -540,7 +540,7 @@ main .loginSignUp-btn .signUp-btn {
 }
 
 .hpMenu-botm .profilePane-ul li a {
-  background: linear-gradient(180deg, #1469ca 0%, #193299 100%);
+  background: linear-gradient(180deg, var( --bright-blue-1) 0%, var(--bright-blue-2) 100%);
   border-radius: 10px;
   font-weight: 600;
   font-size: 14px;
@@ -621,24 +621,24 @@ main .loginSignUp-btn .signUp-btn {
 .referral {
   background-image: linear-gradient(
     180deg,
-    #e611dd 0%,
-    #471883 100%
+    var(--hot-pink-1) 0%,
+    var(--midnight-blue-1) 100%
   ) !important;
 }
 
 .personal-center {
   background-image: linear-gradient(
     180deg,
-    #e67711 0%,
-    #831818 100%
+    var(--orange) 0%,
+    var(--wine-red) 100%
   ) !important;
 }
 
 .game-history {
   background-image: linear-gradient(
     180deg,
-    #5428d2 0%,
-    #7b1893 100%
+    var(--medium-violet) 0%,
+    var(--dark-orchid) 100%
   ) !important;
 }
 
@@ -654,8 +654,8 @@ main .loginSignUp-btn .signUp-btn {
 }
 
 .notification-list .MuiPaper-root {
-  background-color: #191518;
-  color: #212020;
+  background-color: var(--burgundy-2);
+  color: var( --burgundy-1);
   border-radius: 10px;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.32);
   max-width: 450px;
@@ -667,15 +667,15 @@ main .loginSignUp-btn .signUp-btn {
 }
 
 .notification-icons{
-  color: 'var(--gray-400)';
+  color: var(--gray-400);
 }
 
 .notification-content{
-  color: 'var(--gray-400)';
+  color: var(--gray-400);
 }
 
 .header-paper{
-  background-color: 'var(--gray-600, --burgundy-red)';
+  background-color: var(--gray-600, --burgundy-red) !important;
 }
 
 .hpmenu-botm-logout{
@@ -687,6 +687,18 @@ main .loginSignUp-btn .signUp-btn {
 }
 .gmail-height{
   height: 48px;
+}
+
+.notification-active-color{
+  background-color: var(--gray-600,  --deep-pink),
+}
+
+.notification-icons{
+  color: var(--gray-100);
+}
+
+.login-forgot-text{
+  color: var(--gray-100);
 }
 
 @media screen and (max-width: 1729px) {

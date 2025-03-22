@@ -473,9 +473,8 @@ const Sidebar = ({ active, handleActive }: any) => {
 
             {gameTypes.map((item, index) => (
               <Fragment key={index}>
-                <li
-                  style={{ cursor: 'pointer' }}
-                  className={` ${showMenu === item.mainType.name ? 'showMenu' : ''}`}
+                <li 
+                  className={` ${showMenu === item.mainType.name ? 'showMenu' : ''} cursor-pointer`}
                 >
                   <div
                     className={`icon-link ${mainType === item.mainType.name ? 'enable' : ''}`}
@@ -536,7 +535,6 @@ const Sidebar = ({ active, handleActive }: any) => {
                         item?.subType?.length > 1 &&
                         item?.subType.map((subGames, index) => (
                           <Fragment key={index}>
-                            {' '}
                             <li
                               onClick={(e) =>
                                 handleSubType(

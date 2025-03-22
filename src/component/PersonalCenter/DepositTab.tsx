@@ -103,13 +103,13 @@ const DepositTab = () => {
           {t('Search')}
         </button>
       </div>
-      <div className="depositTable" style={{ overflowX: 'auto' }}>
+      <div className="depositTable over-flow-x-auto">
         {isLoading ? (
           <Loader />
         ) : (
           <table className="table table-border">
             <thead>
-              <tr style={{ color: '#A0ABDB' }}>
+              <tr className='table-tr'>
                 <th scope="col">{t('Transaction Id')}</th>
                 <th scope="col">{t('Date')}</th>
                 <th scope="col">{t('Deposit Amount')}</th>

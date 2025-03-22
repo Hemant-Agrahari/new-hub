@@ -50,7 +50,8 @@ const VipBonus = () => {
               <Image
                 src={VIPImg}
                 alt={`Vip ${t('image')}`}
-                style={{ maxWidth: '93px' }}
+                width={93}
+                height={36}
               />
             </div>
           </div>

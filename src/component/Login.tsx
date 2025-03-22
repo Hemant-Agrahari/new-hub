@@ -73,9 +73,7 @@ const Login: React.FC<LoginProps> = ({
       .string()
       .email(`${t(validationMsg.email.invalidEmail)}`)
       .nonempty(t(validationMsg.email.require)),
-    password: z
-      .string()
-      .nonempty(t(validationMsg.password.require))
+    password: z.string().nonempty(t(validationMsg.password.require)),
   })
 
   type ValidationSchemaType = z.infer<typeof validationSchema>
@@ -85,7 +83,7 @@ const Login: React.FC<LoginProps> = ({
       email: '',
       password: '',
     },
-    
+
     validate: withZodSchema(validationSchema),
     onSubmit: async (values) => {
       const obj = {
@@ -156,7 +154,7 @@ const Login: React.FC<LoginProps> = ({
                     placeholder={t('E-mail')}
                     startAdornment={
                       <InputAdornment position="start">
-                        <Email  className='text-white' />
+                        <Email className="text-white" />
                       </InputAdornment>
                     }
                     fullWidth
@@ -175,7 +173,7 @@ const Login: React.FC<LoginProps> = ({
                     placeholder={t('Password')}
                     startAdornment={
                       <InputAdornment position="start">
-                        <Https className='text-white' />
+                        <Https className="text-white" />
                       </InputAdornment>
                     }
                     endAdornment={
@@ -187,9 +185,9 @@ const Login: React.FC<LoginProps> = ({
                           edge="end"
                         >
                           {showPassword ? (
-                            <VisibilityOff className='text-white' />
+                            <VisibilityOff className="text-white" />
                           ) : (
-                            <Visibility className='text-white' />
+                            <Visibility className="text-white" />
                           )}
                         </IconButton>
                       </InputAdornment>
@@ -202,12 +200,9 @@ const Login: React.FC<LoginProps> = ({
                     touched={formik.touched.password}
                   />
                 </Box>
-                <Box  className='d-flex align-items-center justify-content-end'
-                >
-                  <Typography className='font-weight-600 mt-3 cursor-pointer'
-                    sx={{
-                      color: 'var(--gray-100)',
-                    }}
+                <Box className="d-flex align-items-center justify-content-end">
+                  <Typography
+                    className="font-weight-600 mt-3 cursor-pointer login-forgot-text"
                     onClick={() => {
                       handleForgetPassword()
                     }}
@@ -223,13 +218,14 @@ const Login: React.FC<LoginProps> = ({
                   {t('Log in')}
                 </Button>
                 <h6 className="mt-3">
-                  <span className="f-16" style={{ color: 'var(--gray-200)' }}>
+                  <span className="f-16 login-age-verify-text">
                     {t(
                       'To visit this site, please ensure that you are over 18 and agree to the',
                     )}
                     &nbsp;
                   </span>
-                  <span className='f-15 text-white cursor-pointer'
+                  <span
+                    className="f-15 text-white cursor-pointer"
                     onClick={() => {
                       handleCloseLoginModal()
                       router.push('/privacy-policy?tab=0')

@@ -93,9 +93,9 @@ const InvitePartner = () => {
                       disableRipple
                       variant="outlined"
                       onClick={inviteUrlCopy}
-                      style={{ border: 'none' }}
+                      className="border-0"
                     >
-                      <img src='/assets/images/userCopy-iocn.png' alt="" />
+                      <img src="/assets/images/userCopy-iocn.png" alt="" />
                     </Button>
                   </InputAdornment>
                 }
@@ -118,7 +118,7 @@ const InvitePartner = () => {
                       disableRipple
                       variant="outlined"
                       onClick={inviteCodeCopy}
-                      style={{ border: 'none' }}
+                      className="border-0"
                     >
                       <img
                         src={'/assets/images/userCopy-iocn.png'}
@@ -162,7 +162,7 @@ const InvitePartner = () => {
               height={100}
             />
             <Image
-              src='/assets/images/revenue-targets.png'
+              src="/assets/images/revenue-targets.png"
               alt={t('Image')}
               className="d-sm-block d-lg-none d-md-none"
               height={50}

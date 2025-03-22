@@ -129,15 +129,14 @@ const GameHistory = () => {
         </Button>
       </div>
       <div
-        className="depositTable game-history-table"
-        style={{ overflowX: 'auto' }}
+        className="depositTable game-history-table over-flow-x-auto"
       >
         {isLoading ? (
           <Loader />
         ) : (
           <table className="table table-border">
             <thead>
-              <tr style={{ color: '#A0ABDB' }}>
+              <tr className='table-tr'>
                 <th scope="col">{t('Transaction Id')}</th>
                 <th scope="col">{t('Period')}</th>
                 <th scope="col">{t('Game Name')}</th>

@@ -27,7 +27,7 @@ const VipPage = () => {
   }, [])
 
   return (
-    <div className="container" style={{ marginTop: '12vh' }}>
+    <div className="container margin-top-12">
       {/* VIP Bonus ======= */}
       <VipBonus />
       {/* CASHBACK ======= */}

@@ -10,7 +10,7 @@ export const getStaticProps: GetStaticProps = async (context) => {
 }
 const PromotionPage = () => {
   return (
-    <div className="container" style={{ marginTop: '15vh' }}>
+    <div className="container margin-top-14">
       <PromotionTab />
     </div>
   )
