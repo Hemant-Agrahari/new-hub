@@ -1,5 +1,5 @@
 import { BootstrapTooltip } from '@/component/common'
-import { Button, Dialog, LinearProgress } from '@mui/material'
+import { Dialog, LinearProgress } from '@mui/material'
 import HelpOutlineOutlinedIcon from '@mui/icons-material/HelpOutlineOutlined'
 import Link from 'next/link'
 import { useEffect, useState } from 'react'
@@ -16,7 +16,7 @@ import { commonStaticProps } from '@/utils/translation'
 import dynamic from 'next/dynamic'
 import { useTranslation } from 'react-i18next'
 import { copyToClipboard } from '@/utils/commonMethod'
-
+import { Button } from '../../src/component/common/index'
 // Method is for language switch
 export const getStaticProps: GetStaticProps = async (context) => {
   const { locale } = context
@@ -98,7 +98,7 @@ const PersonalCenterPage = () => {
                 <h5 className="mt-1 text-white font-size-24 font-weight-500">
                   {user?.playerId ? user?.playerId : t('User')}
                 </h5>
-                <button className="userButtonCopy mt-2" onClick={()=>copyToClipboard(`${user?.playerId}`,(t('ID Copied')))}>
+                <Button className="userButtonCopy mt-2" onClick={()=>copyToClipboard(`${user?.playerId}`,(t('ID Copied')))}>
                   <Image
                     src={'/assets/images/linking.png'}
                     alt={t('Logo Link')}
@@ -108,7 +108,7 @@ const PersonalCenterPage = () => {
                   <span className="m-2">
                     {t('Copy')} {t('id')}
                   </span>
-                </button>
+                </Button>
               </div>
               <div className="mt-2 d-flex justify-content-between">
                 <AvatarChangeModal />
@@ -157,7 +157,6 @@ const PersonalCenterPage = () => {
                 <div className="walletWithdraw mt-4">
                   <h5 className="amount-redeemed">
                     {t('Total Amount to be Redeemed')}
-                    {/* <ClickAwayListener> */}
                     <BootstrapTooltip
                       disableTouchListener
                       onClose={handleTooltipClose}
@@ -172,7 +171,6 @@ const PersonalCenterPage = () => {
                         <HelpOutlineOutlinedIcon />
                       </Button>
                     </BootstrapTooltip>
-                    {/* </ClickAwayListener> */}
                   </h5>
                   <h5 className="font-weight-700 font-size-26">
                     <Image
@@ -186,20 +184,20 @@ const PersonalCenterPage = () => {
                 </div>
               </div>
               <div className="walletBtnContainer mt-4">
-                <button
+                <Button
                   className="walletBtn"
                   onClick={() => handlePopupTabbing(0)}
                 >
                   {t('Deposit')}
-                </button>
-                <button
+                </Button>
+                <Button
                   className="walletBtnWithdraw"
                   onClick={() => handlePopupTabbing(1)}
                 >
                   {t('Withdraw')}
-                </button>
+                </Button>
               </div>
-              <h6 className="mt-5 cursor-pointer font-size-12 text-align-center walle-history">
+              <h6 className="mt-5 cursor-pointer font-size-12 text-center walle-history">
                 <Link
                   href="/wallet-history"
                   className="text-white font-weight-600"
@@ -224,7 +222,6 @@ const PersonalCenterPage = () => {
                       width={50}
                       height={63}
                     />
-                    {/* <h4 className="PersonallevelsPoint">{4}</h4> */}
                   </div>
                 </div>
                 <h4 className="vip-user-level mt-4">
@@ -270,7 +267,7 @@ const PersonalCenterPage = () => {
                     </div>
                     <div className="userScore-col betAmount">
                       <div className="title-value">
-                        <div className="title">{t('Bet Amount')}</div>{' '}
+                        <div className="title">{t('Bet Amount')}</div>
                         <div className="amount">
                           <Image
                             src="/assets/images/coin.png"
@@ -308,7 +305,6 @@ const PersonalCenterPage = () => {
               <h6 className="ranking-vip mt-5">
                 <Link
                   className="text-white font-weight-600 font-size-15"
-                  // href="/game-history"
                   href="/ranking-vip"
                 >
                   <u>{t('View')}</u>
@@ -317,7 +313,7 @@ const PersonalCenterPage = () => {
             </div>
           </div>
         </div>
-      </div>{' '}
+      </div>
       {/* ===== Wallet Popup ===== */}
       <Dialog
         className="WalletModaluniversal"
