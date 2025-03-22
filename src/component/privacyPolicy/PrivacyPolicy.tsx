@@ -255,7 +255,7 @@ const PrivacyPolicy = () => {
                         that you meet this age To participate in any betting
                         activities, you must be at least 18 years old. By
                         placing a bet, you confirm that you meet this age
-                        requirement.{' '}
+                        requirement.
                       </p>
                       <ul className="ps-4 decimal-list">
                         <li className="list-style-decimal">

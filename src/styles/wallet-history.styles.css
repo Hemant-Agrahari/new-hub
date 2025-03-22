@@ -49,3 +49,48 @@
     border: 1px solid var(--blue) !important;
     border-radius: 8px;
   }
+
+
+
+  /* game history css */
+.custom-autocomplete .MuiAutocomplete-input {
+  color: var(--white); 
+  background-color: var(--gray-400);
+}
+
+.custom-autocomplete .MuiInputBase-input {
+  color: var(--white); 
+  opacity: 1;
+}
+
+.custom-autocomplete .MuiOutlinedInput-root {
+  background-color: var(--gray-400);
+}
+
+.custom-autocomplete .MuiOutlinedInput-root .MuiOutlinedInput-notchedOutline {
+  border-color: var(--white);
+}
+
+.custom-autocomplete .MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline {
+  border-color: var(--white)
+}
+
+.custom-autocomplete .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+  border-color: var(--white)
+}
+
+.custom-autocomplete .MuiFormLabel-root {
+  color: var(--white)
+}
+
+.custom-autocomplete .MuiAutocomplete-paper {
+  background-color: var(--gray-400);
+}
+
+.custom-autocomplete .MuiAutocomplete-option {
+  color: var(--white);
+}
+
+.custom-autocomplete .MuiAutocomplete-option:hover {
+  background-color: var(--blue) !important;
+}

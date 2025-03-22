@@ -31,22 +31,22 @@ const LevelBadge: React.FC<LevelBadgeProps> = ({ level, item }) => {
     switch (level) {
       case 0:
         badgeStyle = {
-          background: 'linear-gradient(135deg, var(--soft-blue), #0C1AFE)',
-          border: '1px solid #3E77E5',
+          background: 'linear-gradient(135deg, var(--soft-blue), var(--blue-royal-2))',
+          border: '1px solid var(--blue-royal-1)',
           borderRadius: '6px',
         }
         break
       case 1:
         badgeStyle = {
-          background: 'linear-gradient(135deg, var(--soft-blue), #0C1AFE)',
-          border: '1px solid #3E77E5',
+          background: 'linear-gradient(135deg, var(--soft-blue), var(--blue-royal-2))',
+          border: '1px solid var(--blue-royal-1)',
           borderRadius: '6px',
         }
         break
       case 2:
         badgeStyle = {
-          background: 'linear-gradient(135deg, #EC5AA2, #600D69)',
-          border: '1px solid #3E77E5',
+          background: 'linear-gradient(135deg, var(--hot-pin), var(--dark-orchid))',
+          border: '1px solid var(--blue-royal-1)',
           borderRadius: '6px',
         }
       case 3:

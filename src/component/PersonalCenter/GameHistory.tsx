@@ -1,10 +1,5 @@
 import { useEffect, useState } from 'react'
-import {
-  FormControl,
-  Autocomplete,
-  TextField,
-  Paper,
-} from '@mui/material'
+import { FormControl, Autocomplete, TextField, Paper } from '@mui/material'
 import DatePicker from 'react-datepicker'
 import { addDays } from 'date-fns'
 import { useAppSelector } from '@/redux/hooks'
@@ -45,7 +40,6 @@ const GameHistory = () => {
       if (response.data.status !== 'success') {
         throw new Error(response.data.message || t('Something went wrong'))
       }
-      //
       if (
         response.data.result &&
         Array.isArray(response.data?.result?.gameHistory)
@@ -57,7 +51,6 @@ const GameHistory = () => {
       }
     } catch (error: unknown) {
       if (error instanceof Error) {
-        // toast.error(error.message)
         logError(error)
       }
     } finally {
@@ -116,51 +109,13 @@ const GameHistory = () => {
                 placeholder={t('Select Option')}
                 InputProps={{
                   ...params.InputProps,
-                  sx: {
-                    color: 'white', // Set the text color to white
-                    '& .MuiAutocomplete-input': {
-                      color: 'white', // Ensure the input text color is white
-                    },
-                    backgroundColor: 'var(--gray-400)', // Set the background color
-                  },
+                  className: 'custom-autocomplete',
                 }}
-                sx={{
-                  '& .MuiInputBase-input': {
-                    color: 'white', // Set the text color to white
-                    opacity: 1,
-                  },
-                  '& .MuiOutlinedInput-root': {
-                    '& fieldset': {
-                      borderColor: 'white', // Set the border color to white
-                    },
-                    '&:hover fieldset': {
-                      borderColor: 'white', // Set the border color to white on hover
-                    },
-                    '&.Mui-focused fieldset': {
-                      borderColor: 'white', // Set the border color to white when focused
-                    },
-                    backgroundColor: 'var(--gray-400)', // Set the background color
-                  },
-                  '& .MuiFormLabel-root': {
-                    color: 'white', // Set the label color to white
-                  },
-                }}
+                className="custom-autocomplete"
               />
             )}
             PaperComponent={({ children }) => (
-              <Paper
-                sx={{
-                  backgroundColor: 'var(--gray-400)',
-                  '& .MuiAutocomplete-option': {
-                    color: 'white', // Option text color
-                    '&:hover': {
-                      backgroundColor: 'var(--blue) !important', // Hover background color for options
-                    },
-                  },
-                }}
-              >
-                {children}
-              </Paper>
+              <Paper className="custom-autocomplete">{children}</Paper>
             )}
           />
         </FormControl>
@@ -202,7 +157,7 @@ const GameHistory = () => {
                       new Date(a?.createdAt).getTime(),
                   )
                   .map((item) => (
-                    <tr style={{ color: 'var(--white)' }} key={item?._id}>
+                    <tr className='text-white' key={item?._id}>
                       <th scope="row">{item?._id}</th>
                       <td>{`${dayjs(item?.createdAt).format('LLL')}`}</td>
                       <td>{item?.gameName}</td>

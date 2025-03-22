@@ -54,7 +54,6 @@ const WithdrawTab = () => {
       if (response.data.status !== 'success') {
         throw new Error(response.data.message || t('Something went wrong'))
       }
-      //
       if (response.data.result && Array.isArray(response.data.result.data)) {
         setWalletHistory(response.data.result)
       } else {
@@ -63,7 +62,6 @@ const WithdrawTab = () => {
       }
     } catch (error: unknown) {
       if (error instanceof Error) {
-        // toast.error(error.message)
         logError(error)
       }
     } finally {
